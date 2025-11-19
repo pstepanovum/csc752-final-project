@@ -11,11 +11,16 @@ The plane detection system analyzes depth map data from the HSR's RGBD sensor an
 
 ## Installation
 
-### 1. Copy ROS Package to Your Catkin Workspace
+### 1. Add Project to Your Catkin Workspace
 
 ```bash
-# From the project directory
-cp -r hsr_plane_detection ~/catkin_ws/src/
+# Option 1: Clone directly into catkin workspace
+cd ~/catkin_ws/src
+git clone <your-repo-url> hsr_plane_detection
+
+# Option 2: Create symbolic link (recommended for development)
+cd ~/catkin_ws/src
+ln -s /path/to/csc752-final-project hsr_plane_detection
 ```
 
 ### 2. Install Dependencies

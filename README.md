@@ -30,10 +30,15 @@ This ROS package implements real-time plane detection for the Toyota HSR robot u
 
 ## Installation
 
-1. **Copy package to your catkin workspace:**
+1. **Clone or symlink this project to your catkin workspace:**
    ```bash
-   # From the csc752-final-project directory
-   cp -r hsr_plane_detection ~/catkin_ws/src/
+   # Option 1: Clone directly into catkin workspace
+   cd ~/catkin_ws/src
+   git clone <your-repo-url> hsr_plane_detection
+
+   # Option 2: Create symbolic link (recommended for development)
+   cd ~/catkin_ws/src
+   ln -s /path/to/csc752-final-project hsr_plane_detection
    ```
 
 2. **Install Python dependencies:**
