@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- Plane Detection Parameters -->
+  <arg name="min_plane_points" default="500" />
+  <arg name="ransac_threshold" default="0.02" />
+  <arg name="max_planes" default="5" />
+  <arg name="min_plane_area" default="0.1" />
+  <arg name="downsample_factor" default="4" />
+  <arg name="use_rviz" default="true" />
+
+  <!-- Plane Detection Node -->
+  <node name="plane_detection_node" pkg="hsr_plane_detection" type="plane_detection_node.py" output="screen">
+    <param name="min_plane_points" value="$(arg min_plane_points)" />
+    <param name="ransac_threshold" value="$(arg ransac_threshold)" />
+    <param name="max_planes" value="$(arg max_planes)" />
+    <param name="min_plane_area" value="$(arg min_plane_area)" />
+    <param name="downsample_factor" value="$(arg downsample_factor)" />
+  </node>
+
+  <!-- RViz for Visualization -->
+  <node if="$(arg use_rviz)" name="rviz" pkg="rviz" type="rviz"
+        args="-d $(find hsr_plane_detection)/rviz/plane_detection.rviz"
+        output="screen" />
+
+</launch>
