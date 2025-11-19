@@ -1,0 +1,305 @@
+================================================================================
+ROS COMMUNICATION ARCHITECTURE: HSR Plane Detection & Depth Processing
+================================================================================
+
+1. HARDWARE/SIMULATOR LAYER
+└── Isaac Sim (hsr_localization_world.py)
+    ├── Robot Model: Toyota HSR
+    ├── Sensors:
+    │   ├── Head RGBD Camera (Depth + RGB)
+    │   ├── Base Laser Scanner
+    │   ├── IMU (Inertial Measurement Unit)
+    │   └── Wheel Encoders (for odometry)
+    └── Environment:
+        ├── Map/Scene
+        └── Physics Simulation
+
+2. SENSOR PUBLISHER LAYER
+These topics are PUBLISHED BY the simulator/hardware:
+
+    Isaac Sim / HSR Hardware
+    ├── Camera Topics:
+    │   └── /hsrb/head_rgbd_sensor/
+    │       ├── rgb/
+    │       │   ├── image_rect_color (sensor_msgs/Image)
+    │       │   └── camera_info (sensor_msgs/CameraInfo)
+    │       ├── depth/
+    │       │   ├── image_rect_raw (sensor_msgs/Image - uint16 depth values)
+    │       │   ├── image_rect (sensor_msgs/Image)
+    │       │   └── camera_info (sensor_msgs/CameraInfo)
+    │       └── points (sensor_msgs/PointCloud2) [Optional - may need bridge]
+    │
+    ├── Odometry Topics:
+    │   └── /hsrb/odom (nav_msgs/Odometry)
+    │       └── Contains: pose, twist, covariance
+    │
+    ├── Laser Topics:
+    │   └── /hsrb/base_scan (sensor_msgs/LaserScan)
+    │       └── Contains: ranges, intensities, angles
+    │
+    ├── IMU Topics:
+    │   └── /hsrb/base_imu/data (sensor_msgs/Imu)
+    │       └── Contains: acceleration, angular_velocity, orientation
+    │
+    ├── Transform Topics:
+    │   ├── /tf (tf2_msgs/TFMessage)
+    │   │   └── Dynamic transforms (updating frames)
+    │   └── /tf_static (tf2_msgs/TFMessage)
+    │       └── Static transforms (fixed relationships)
+    │
+    ├── Command/Velocity Topics:
+    │   ├── /cmd_vel (geometry_msgs/Twist)
+    │   └── /hsrb/command_velocity (geometry_msgs/Twist)
+    │
+    └── Navigation Topics:
+        ├── /move_base/goal (move_base_msgs/MoveBaseActionGoal)
+        └── /move_base/feedback (move_base_msgs/MoveBaseActionFeedback)
+
+3. DEPTH PROCESSING NODE LAYER
+Your custom node: plane_detection_node.py / depth_processor.py
+
+    Depth Processor Node
+    │
+    ├── INPUT (Subscribes to):
+    │   ├── /hsrb/head_rgbd_sensor/depth/image_rect_raw
+    │   ├── /hsrb/head_rgbd_sensor/depth/camera_info
+    │   ├── /hsrb/head_rgbd_sensor/points (if available)
+    │   └── /tf [for coordinate transformations]
+    │
+    ├── PROCESSING:
+    │   ├── Step 1: Depth image decoding (uint16 → float depth values)
+    │   ├── Step 2: Point cloud conversion (image → 3D points)
+    │   ├── Step 3: Point cloud filtering (outliers, NaN values)
+    │   ├── Step 4: Plane detection (RANSAC, Hough transform)
+    │   ├── Step 5: Plane segmentation & clustering
+    │   ├── Step 6: Feature extraction (plane normal, center, bounds)
+    │   └── Step 7: Transformation to world frame (using TF)
+    │
+    ├── OUTPUT (Publishes):
+    │   ├── /detected_planes (PoseArray, MarkerArray, or custom msg)
+    │   ├── /plane_coefficients (custom msg with plane equations)
+    │   ├── /depth_map_processed (processed Image)
+    │   ├── /point_cloud_filtered (PointCloud2)
+    │   └── /plane_debug_markers (MarkerArray for visualization)
+    │
+    └── SERVICES (Optional):
+        ├── /detect_planes (triggers plane detection)
+        └── /get_plane_features (returns plane properties)
+
+4. LOCALIZATION NODE LAYER (Optional - for full system)
+Your custom node: localization_node.py
+
+    Localization Node
+    │
+    ├── INPUT (Subscribes to):
+    │   ├── /hsrb/odom (wheel odometry)
+    │   ├── /hsrb/base_scan (laser for loop closure)
+    │   ├── /detected_planes (from depth processor)
+    │   ├── /tf [for existing transforms]
+    │   └── /map (if map available)
+    │
+    ├── PROCESSING:
+    │   ├── Particle Filter or EKF
+    │   ├── Motion model update
+    │   ├── Measurement model update
+    │   ├── Resampling
+    │   └── Pose estimation
+    │
+    ├── OUTPUT (Publishes):
+    │   ├── /odometry/filtered (nav_msgs/Odometry)
+    │   ├── /tf (corrected transforms)
+    │   ├── /particle_cloud (PoseArray)
+    │   └── /localization_status (custom msg)
+    │
+    └── SERVICES:
+        ├── /global_localization (reset particles)
+        └── /set_pose (initialize pose)
+
+5. VISUALIZATION LAYER (RViz)
+File: rviz/hsr_pf_localization_sim.rviz
+
+    RViz (3D Visualization)
+    │
+    ├── Displays:
+    │   ├── RobotModel
+    │   │   └── Visualizes HSR URDF
+    │   │
+    │   ├── TF
+    │   │   └── Shows all coordinate frames
+    │   │
+    │   ├── LaserScan
+    │   │   └── Topic: /hsrb/base_scan (red points)
+    │   │
+    │   ├── Image
+    │   │   ├── /hsrb/head_rgbd_sensor/rgb/image_rect_color
+    │   │   └── /hsrb/head_rgbd_sensor/depth/image_rect_raw
+    │   │
+    │   ├── PointCloud2
+    │   │   └── Topic: /hsrb/head_rgbd_sensor/points (3D points)
+    │   │
+    │   ├── Odometry
+    │   │   ├── /hsrb/odom (raw trajectory - one color)
+    │   │   └── /odometry/filtered (EKF trajectory - different color)
+    │   │
+    │   ├── Marker/MarkerArray
+    │   │   ├── /detected_planes (plane centers/normals)
+    │   │   └── /plane_debug_markers (plane visualization)
+    │   │
+    │   ├── PoseArray
+    │   │   └── Particle filter poses (if applicable)
+    │   │
+    │   └── Map
+    │       └── /map (if loaded)
+    │
+    ├── Fixed Frame: /map (or /odom)
+    ├── View Controls: Pan, rotate, zoom
+    └── Tools: Select, Move camera, Publish point/pose
+
+6. LAUNCH FILE FLOW
+File: launch/robocanes_hsr_correction_sim.launch
+
+    roslaunch robocanes_hsr_correction_sim.launch
+    │
+    ├── Load robot_description (HSR URDF)
+    │   └── Published to /robot_description
+    │
+    ├── Start robot_state_publisher
+    │   └── Reads URDF → publishes static TF for joints
+    │
+    ├── Start depth_processor_node
+    │   ├── Subscribes to: /hsrb/head_rgbd_sensor/*
+    │   └── Publishes to: /detected_planes, /point_cloud_filtered
+    │
+    ├── Start localization_node (if used)
+    │   ├── Subscribes to: /hsrb/odom, /detected_planes
+    │   └── Publishes to: /odometry/filtered, /tf
+    │
+    ├── Set parameters:
+    │   ├── use_sim_time=true (if using rosbag)
+    │   ├── localization params
+    │   └── depth processing params
+    │
+    └── Start RViz
+        └── Load configuration from rviz/hsr_pf_localization_sim.rviz
+
+7. DATA FLOW DIAGRAM
+
+        Isaac Sim                   Physical Sensors
+            │                            │
+            ├─────┬──────────────────────┤
+            │     │                      │
+            ▼     ▼                      ▼
+        Depth Image    Camera Info    RGB Image
+        (uint16)       (intrinsics)   (uint8 RGB)
+            │               │            │
+            └───────────────┬────────────┘
+                            │
+                            ▼
+                    Depth Processor Node
+                            │
+        ┌───────────────────┼───────────────────┐
+        │                   │                   │
+        ▼                   ▼                   ▼
+    Convert to      Filter Outliers      Transform
+    Point Cloud        (NaN, inf)       to World Frame
+        │                   │                   │
+        └───────────────────┼───────────────────┘
+                            │
+                            ▼
+                    RANSAC Plane Detection
+                            │
+        ┌───────────────────┼───────────────────┐
+        │                   │                   │
+        ▼                   ▼                   ▼
+    /detected_planes  /plane_markers    /depth_map_processed
+    (geometry_msgs/)  (visualization/)  (sensor_msgs/Image)
+        │                   │                   │
+        └───────────────────┼───────────────────┘
+                            │
+                            ▼
+                        RViz Visualization
+                            │
+                ┌───────────┬┴────────────┐
+                │           │            │
+                ▼           ▼            ▼
+            Show Planes  Show Point   Show Odometry
+                        Clouds        Trajectory
+
+8. COORDINATE FRAMES (TF TREE)
+
+    /map                                    (Global reference)
+        │
+        └── /odom                           (Odometry frame)
+            │
+            └── /base_link                  (Robot base)
+                │
+                ├── /base_footprint
+                ├── /base_scan               (Laser scanner)
+                ├── /base_imu                (IMU)
+                │
+                └── /head_pan_link
+                    │
+                    └── /head_tilt_link
+                        │
+                        ├── /head_rgbd_sensor_rgb_frame
+                        │   └── /head_rgbd_sensor_rgb_optical_frame
+                        │
+                        └── /head_rgbd_sensor_depth_frame
+                            └── /head_rgbd_sensor_depth_optical_frame
+
+
+9. KEY MESSAGE TYPES
+
+    Depth Image: sensor_msgs/Image
+    - Format: TYPE_16UC1 or TYPE_32FC1
+    - Data: uint16 depth values (mm or raw) or float depths
+    - Height × Width: resolution
+
+    Point Cloud: sensor_msgs/PointCloud2
+    - Format: XYZ + optional RGB, intensity
+    - Fields: x, y, z, rgb (uint32 packed RGBA)
+    - Ordered vs unordered
+
+    Odometry: nav_msgs/Odometry
+    - pose: geometry_msgs/PoseWithCovariance
+    - twist: geometry_msgs/TwistWithCovariance
+    - child_frame_id: usually "base_link"
+
+    Marker: visualization_msgs/Marker
+    - type: CUBE, SPHERE, ARROW, LINE_STRIP, etc.
+    - color: rgba
+    - position: geometry_msgs/Point
+    - orientation: geometry_msgs/Quaternion
+
+    Transform: geometry_msgs/TransformStamped
+    - header.frame_id: parent frame
+    - child_frame_id: child frame
+    - transform: translation + rotation (quaternion)
+
+10. DEBUGGING COMMANDS
+
+    # Monitor active topics
+    rostopic list
+    rostopic hz /hsrb/head_rgbd_sensor/depth/image_rect_raw
+
+    # View topic data
+    rostopic echo /hsrb/odom -n 1
+    rostopic echo /detected_planes -n 1
+
+    # Check node graph
+    rqt_graph
+
+    # View camera image
+    rosrun image_view image_view image:=/hsrb/head_rgbd_sensor/rgb/image_rect_color
+
+    # View point cloud
+    rosrun rviz rviz
+
+    # Check transforms
+    rosrun tf2_tools frames.py                  # Creates frames.pdf
+    tf_echo /base_link /head_rgbd_sensor_rgb_optical_frame
+
+    # Monitor logs
+    rqt_console
+
+================================================================================
