@@ -11,15 +11,20 @@ The plane detection system analyzes depth map data from the HSR's RGBD sensor an
 
 ## Installation
 
-The ROS package is located in: `~/catkin_ws/src/hsr_plane_detection/`
+### 1. Copy ROS Package to Your Catkin Workspace
 
-### 1. Install Dependencies
+```bash
+# From the project directory
+cp -r hsr_plane_detection ~/catkin_ws/src/
+```
+
+### 2. Install Dependencies
 
 ```bash
 pip3 install numpy scikit-learn opencv-python
 ```
 
-### 2. Build the Package
+### 3. Build the Package
 
 ```bash
 cd ~/catkin_ws
