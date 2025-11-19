@@ -7,11 +7,6 @@ find_package(catkin REQUIRED COMPONENTS
   sensor_msgs
   geometry_msgs
   visualization_msgs
-  tf2_ros
-  tf2_geometry_msgs
-  cv_bridge
-  pcl_ros
-  pcl_conversions
 )
 
 catkin_package(
@@ -21,15 +16,6 @@ catkin_package(
     sensor_msgs
     geometry_msgs
     visualization_msgs
-    tf2_ros
-    tf2_geometry_msgs
-    cv_bridge
-    pcl_ros
-    pcl_conversions
-)
-
-include_directories(
-  ${catkin_INCLUDE_DIRS}
 )
 
 catkin_install_python(PROGRAMS
