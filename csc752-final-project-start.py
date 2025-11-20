@@ -29,8 +29,10 @@ ISAAC_WORLD_NAME = 'hsr_localization_world.py'
 ISAAC_WORLD_PATH = os.path.join(PACKAGE_PATH, ISAAC_WORLD_NAME)
 print(f'Isaac Sim world path:', ISAAC_WORLD_PATH)
 
+# Project path for RViz config (this script's directory)
+PROJECT_PATH = os.path.dirname(os.path.abspath(__file__))
 RVIZ_NAME = 'plane_detection.rviz'
-RVIZ_PATH = os.path.join(PACKAGE_PATH, RVIZ_NAME)
+RVIZ_PATH = os.path.join(PROJECT_PATH, RVIZ_NAME)
 print(f'RVIZ path:', RVIZ_PATH)
 
 # Commands to start processes
