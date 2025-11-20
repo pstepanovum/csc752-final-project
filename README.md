@@ -1,6 +1,6 @@
-# HSR Plane Detection Package
+# CSC752 Final Project - Plane Detection with Depth Maps
 
-This ROS package implements real-time plane detection for the Toyota HSR robot using depth map analysis and RANSAC algorithm. Detected planes are visualized in RViz with color-coded markers, surface normals, and area measurements.
+Real-time plane detection for the Toyota HSR robot using depth map analysis and RANSAC algorithm. Detected planes are visualized in RViz with color-coded markers, surface normals, and area measurements.
 
 ## Features
 
@@ -11,34 +11,16 @@ This ROS package implements real-time plane detection for the Toyota HSR robot u
   - Color-coded plane surfaces
   - Surface normal vectors
   - Plane area labels
-  - Point cloud overlay
+  - Camera overlay with plane markers
 - **Configurable parameters** for different environments
-- **Automatic filtering** of small/invalid planes
-
-## Dependencies
-
-- ROS Noetic
-- Python 3.8+
-- sensor_msgs
-- geometry_msgs
-- visualization_msgs
-- tf2_ros
-- cv_bridge
-- pcl_ros
-- numpy
-- scikit-learn
+- **Isaac Sim integration** with proper time synchronization
 
 ## Installation
 
-1. **Clone or symlink this project to your catkin workspace:**
+1. **Add to catkin workspace:**
    ```bash
-   # Option 1: Clone directly into catkin workspace
    cd ~/catkin_ws/src
-   git clone <your-repo-url> hsr_plane_detection
-
-   # Option 2: Create symbolic link (recommended for development)
-   cd ~/catkin_ws/src
-   ln -s /path/to/csc752-final-project hsr_plane_detection
+   ln -s ~/hsr_robocanes_omniverse/src/csc752-final-project csc752-final-project
    ```
 
 2. **Install Python dependencies:**
@@ -55,25 +37,52 @@ This ROS package implements real-time plane detection for the Toyota HSR robot u
 
 ## Usage
 
-### Quick Start
+### Running with Isaac Sim (Recommended)
 
-1. **Start Isaac Sim with HSR robot** (ensure RGBD sensor is publishing)
+**Step 1:** Start the simulation infrastructure and RViz
+```bash
+csc752-final-project-start.py
+```
 
-2. **Launch plane detection:**
-   ```bash
-   roslaunch hsr_plane_detection plane_detection.launch
-   ```
+This launches:
+- HSR Isaac Localization system
+- Isaac Sim world
+- RViz with plane detection visualization
 
-   This will start:
-   - Plane detection node
-   - RViz with pre-configured visualization
+**Step 2:** In a new terminal, launch the plane detection node
+```bash
+roslaunch csc752-final-project plane_detection_with_isaac.launch
+```
 
-### Launch File Parameters
+This starts the plane detection processing and publishes markers to RViz.
 
-You can customize the behavior using launch arguments:
+### Standalone Mode (Without Startup Script)
+
+If you want to run without the startup script:
 
 ```bash
-roslaunch hsr_plane_detection plane_detection.launch \
+roslaunch csc752-final-project plane_detection.launch
+```
+
+This launches both the plane detection node and RViz.
+
+## Launch Files
+
+- **`plane_detection_with_isaac.launch`** - Use with Isaac Sim (after running startup script)
+  - Sets `use_sim_time=true` for simulation
+  - Launches only the plane detection node
+  - No RViz (already launched by startup script)
+
+- **`plane_detection.launch`** - Standalone mode
+  - Launches plane detection node and RViz
+  - Use when NOT using the startup script
+
+## Parameters
+
+Customize plane detection behavior:
+
+```bash
+roslaunch csc752-final-project plane_detection_with_isaac.launch \
   min_plane_points:=800 \
   ransac_threshold:=0.03 \
   max_planes:=3 \
@@ -81,200 +90,77 @@ roslaunch hsr_plane_detection plane_detection.launch \
   downsample_factor:=2
 ```
 
-**Parameters:**
-- `min_plane_points` (default: 500): Minimum points required for a valid plane
-- `ransac_threshold` (default: 0.02): RANSAC distance threshold in meters
-- `max_planes` (default: 5): Maximum number of planes to detect
-- `min_plane_area` (default: 0.1): Minimum plane area in m²
-- `downsample_factor` (default: 4): Point cloud downsampling factor (higher = faster)
-- `use_rviz` (default: true): Whether to launch RViz automatically
+**Available Parameters:**
+- `min_plane_points` (default: 500) - Minimum points for valid plane
+- `ransac_threshold` (default: 0.02) - RANSAC distance threshold in meters
+- `max_planes` (default: 5) - Maximum number of planes to detect
+- `min_plane_area` (default: 0.1) - Minimum plane area in m²
+- `downsample_factor` (default: 4) - Point cloud downsampling (higher = faster)
 
-### Without RViz
+## ROS Topics
 
-To run only the detection node:
+### Subscribed
+- `/hsrb/head_rgbd_sensor/depth_registered/rectified_points` - Point cloud input
 
+### Published
+- `/plane_markers` - Visualization markers for detected planes
+
+## Visualization
+
+In RViz you'll see:
+- **Robot model** (semi-transparent HSR)
+- **Map** (if available)
+- **LaserScan** (base laser)
+- **PointCloud** (RGBD depth data)
+- **PlaneMarkers** (detected planes with colors, normals, labels)
+- **Camera view** (RGB feed with plane overlay)
+
+## Tuning Tips
+
+**For large open spaces:**
 ```bash
-roslaunch hsr_plane_detection plane_detection.launch use_rviz:=false
+max_planes:=3 min_plane_area:=0.5 ransac_threshold:=0.03
 ```
 
-### Manual RViz Launch
-
+**For cluttered environments:**
 ```bash
-rosrun rviz rviz -d $(rospack find hsr_plane_detection)/rviz/plane_detection.rviz
+max_planes:=8 min_plane_area:=0.05 min_plane_points:=300
 ```
 
-## Topics
-
-### Subscribed Topics
-
-- `/hsrb/head_rgbd_sensor/points` ([sensor_msgs/PointCloud2](http://docs.ros.org/api/sensor_msgs/html/msg/PointCloud2.html))
-  - Input point cloud from HSR's RGBD sensor
-
-### Published Topics
-
-- `/plane_markers` ([visualization_msgs/MarkerArray](http://docs.ros.org/api/visualization_msgs/html/msg/MarkerArray.html))
-  - Visualization markers for RViz showing:
-    - Plane surfaces (colored triangular meshes)
-    - Plane labels with area measurements
-    - Surface normal vectors (yellow arrows)
-
-- `/detected_plane_cloud` ([sensor_msgs/PointCloud2](http://docs.ros.org/api/sensor_msgs/html/msg/PointCloud2.html))
-  - Point cloud of detected plane inliers (future use)
-
-## Algorithm Overview
-
-The plane detection system uses a multi-stage RANSAC approach:
-
-1. **Point Cloud Acquisition**: Subscribe to RGBD sensor point cloud
-2. **Preprocessing**:
-   - Remove NaN and infinite values
-   - Filter points beyond 10m
-   - Downsample for performance
-3. **Iterative RANSAC Plane Fitting**:
-   - Fit plane using RANSAC regression
-   - Try multiple orientations (horizontal and vertical planes)
-   - Extract inliers above threshold
-4. **Plane Validation**:
-   - Check minimum point count
-   - Estimate and validate plane area
-5. **Visualization**:
-   - Create triangulated mesh for plane surface
-   - Compute and display surface normals
-   - Label with area measurements
-
-## Visualization Guide
-
-When you open RViz, you should see:
-
-- **White/Gray Points**: Raw point cloud from RGBD sensor
-- **Colored Surfaces**: Detected planes (red, green, blue, yellow, magenta, cyan)
-- **Yellow Arrows**: Surface normal vectors (pointing outward from plane)
-- **White Text Labels**: Plane number and area in m²
-- **TF Frames**: Coordinate frames showing robot pose
-
-### RViz Display Configuration
-
-The pre-configured RViz setup includes:
-- **Grid**: Reference ground plane
-- **PointCloud2**: Raw sensor data
-- **MarkerArray**: Detected planes and annotations
-- **TF**: Coordinate frames
-- **RobotModel**: HSR robot visualization
-
-## Tuning Parameters
-
-### For Large Open Spaces
+**For better performance:**
 ```bash
-roslaunch hsr_plane_detection plane_detection.launch \
-  max_planes:=3 \
-  min_plane_area:=0.5 \
-  ransac_threshold:=0.03
-```
-
-### For Cluttered Environments
-```bash
-roslaunch hsr_plane_detection plane_detection.launch \
-  max_planes:=8 \
-  min_plane_area:=0.05 \
-  ransac_threshold:=0.015 \
-  min_plane_points:=300
-```
-
-### For Better Performance
-```bash
-roslaunch hsr_plane_detection plane_detection.launch \
-  downsample_factor:=8 \
-  max_planes:=3
-```
-
-### For Higher Accuracy
-```bash
-roslaunch hsr_plane_detection plane_detection.launch \
-  downsample_factor:=2 \
-  ransac_threshold:=0.01 \
-  min_plane_points:=1000
+downsample_factor:=8 max_planes:=3
 ```
 
 ## Troubleshooting
 
-### No planes detected
-- **Check point cloud**: Verify `/hsrb/head_rgbd_sensor/points` is publishing
-  ```bash
-  rostopic echo /hsrb/head_rgbd_sensor/points --noarr
-  ```
-- **Reduce thresholds**: Try lower `min_plane_points` or larger `ransac_threshold`
-- **Check environment**: Ensure robot is viewing surfaces (walls, floor, tables)
+**No planes detected:**
+- Check point cloud topic: `rostopic echo /hsrb/head_rgbd_sensor/depth_registered/rectified_points --noarr`
+- Lower thresholds: `min_plane_points:=200 ransac_threshold:=0.03`
 
-### Poor performance / lag
-- **Increase downsampling**: Set `downsample_factor:=8` or higher
-- **Reduce max planes**: Set `max_planes:=2` or `max_planes:=3`
-- **Check point cloud density**: Very dense clouds may need more downsampling
+**Performance issues:**
+- Increase downsampling: `downsample_factor:=8`
+- Reduce max planes: `max_planes:=2`
 
-### Planes flickering
-- **Increase RANSAC threshold**: Set `ransac_threshold:=0.03`
-- **Increase minimum points**: Set `min_plane_points:=800`
-- This usually happens with noisy sensor data
+**Planes flickering:**
+- Increase stability: `ransac_threshold:=0.03 min_plane_points:=800`
 
-### Wrong planes detected
-- **Increase min area**: Set `min_plane_area:=0.2` to filter small surfaces
-- **Adjust threshold**: Fine-tune `ransac_threshold` for your environment
-
-## Development
-
-### Node Structure
+## Project Structure
 
 ```
-plane_detection_node.py
-├── PlaneDetectionNode
-│   ├── __init__(): Initialize parameters and ROS communication
-│   ├── point_cloud_callback(): Main processing pipeline
-│   ├── pointcloud2_to_array(): Convert ROS message to numpy
-│   ├── detect_planes(): Multi-plane RANSAC detection
-│   ├── fit_plane_ransac(): Single plane fitting
-│   ├── estimate_plane_area(): Compute plane dimensions
-│   └── publish_plane_markers(): Create visualization markers
+csc752-final-project/
+├── scripts/
+│   ├── plane_detection_node.py      # Main plane detection
+│   └── depth_processor_node.py      # Depth image processor
+├── launch/
+│   ├── plane_detection_with_isaac.launch  # Use with Isaac Sim
+│   └── plane_detection.launch             # Standalone mode
+├── doc/                              # Documentation
+├── plane_detection.rviz              # RViz configuration
+├── csc752-final-project-start.py     # Startup script
+└── README.md
 ```
-
-### Extending the Package
-
-To add custom plane analysis:
-
-1. Modify `detect_planes()` to extract additional features
-2. Add new topics in `__init__()` for publishing results
-3. Create custom marker types in `publish_plane_markers()`
-
-### Alternative: Using Depth Images Directly
-
-The package currently uses point clouds. To process depth images:
-
-1. Subscribe to `/hsrb/head_rgbd_sensor/depth/image_rect_raw`
-2. Convert depth image to point cloud using camera intrinsics
-3. Apply the same RANSAC pipeline
-
-## Performance Characteristics
-
-- **Processing Rate**: ~10-30 Hz (depends on point cloud size and parameters)
-- **Latency**: <100ms typical
-- **Memory**: ~200MB for full resolution point clouds
-- **CPU Usage**: 20-50% single core (with downsampling)
-
-## References
-
-- [RANSAC Algorithm](https://en.wikipedia.org/wiki/Random_sample_consensus)
-- [ROS Visualization Markers](http://wiki.ros.org/rviz/DisplayTypes/Marker)
-- [Point Cloud Library](https://pointclouds.org/)
 
 ## License
 
 MIT License
-
-## Authors
-
-CSC 752 Final Project Team
-
-## Support
-
-For issues or questions:
-1. Check this README and troubleshooting section
-2. Review ROS logs: `rosnode info plane_detection_node`
-3. Verify sensor topics: `rostopic list | grep hsrb`
