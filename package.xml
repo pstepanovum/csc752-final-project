@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>hsr_plane_detection</name>
+  <name>csc752-final-project</name>
   <version>0.1.0</version>
-  <description>Plane detection using depth maps for Toyota HSR robot</description>
+  <description>Plane detection using depth maps for Toyota HSR robot - CSC752 Final Project</description>
 
   <maintainer email="student@example.com">CSC752 Student</maintainer>
   <license>MIT</license>

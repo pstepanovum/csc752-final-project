@@ -1,14 +1,17 @@
 <?xml version="1.0"?>
 <launch>
-  <!-- Main launch file for plane detection (standalone mode with RViz) -->
+  <!-- Launch file for plane detection with Isaac Sim -->
+  <!-- Use this when running with Isaac Sim simulation -->
 
-  <!-- Arguments -->
+  <!-- Set use_sim_time to true for Isaac Sim -->
+  <param name="use_sim_time" value="true" />
+
+  <!-- Plane Detection Parameters -->
   <arg name="min_plane_points" default="500" />
   <arg name="ransac_threshold" default="0.02" />
   <arg name="max_planes" default="5" />
   <arg name="min_plane_area" default="0.1" />
   <arg name="downsample_factor" default="4" />
-  <arg name="use_rviz" default="true" />
 
   <!-- Plane Detection Node -->
   <node name="plane_detection_node" pkg="csc752-final-project" type="plane_detection_node.py" output="screen">
@@ -18,10 +21,5 @@
     <param name="min_plane_area" value="$(arg min_plane_area)" />
     <param name="downsample_factor" value="$(arg downsample_factor)" />
   </node>
-
-  <!-- RViz for Visualization (optional - disable if using startup script) -->
-  <node if="$(arg use_rviz)" name="rviz" pkg="rviz" type="rviz"
-        args="-d $(find csc752-final-project)/plane_detection.rviz"
-        output="screen" />
 
 </launch>

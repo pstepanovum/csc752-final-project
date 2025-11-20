@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0.2)
-project(hsr_plane_detection)
+project(csc752-final-project)
 
 find_package(catkin REQUIRED COMPONENTS
   rospy
@@ -28,6 +28,6 @@ install(DIRECTORY launch/
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/launch
 )
 
-install(DIRECTORY rviz/
-  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/rviz
+install(FILES plane_detection.rviz
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
 )
