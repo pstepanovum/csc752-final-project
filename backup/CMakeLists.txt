@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0.2)
-project(csc752-final-project)
+project(csc647-final-project)
 
 ## Find catkin and required packages
 find_package(catkin REQUIRED COMPONENTS

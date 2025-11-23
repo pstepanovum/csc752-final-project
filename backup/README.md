@@ -18,7 +18,7 @@ hsr_lidar_mesh/
 ├── README.md                   # This file
 ├── INSTRUCTIONS.md             # Complete ROS project guide
 ├── requirements.txt            # Python dependencies
-├── csc752-final-project-start.py  # Main startup script
+├── csc647-final-project-start.py  # Main startup script
 ├── launch/                     # Launch files
 │   ├── lidar_mesh_processing.launch      # Main launch file
 │   ├── lidar_mesh_with_isaac.launch      # For Isaac Sim integration
@@ -57,7 +57,7 @@ hsr_lidar_mesh/
 
 ### For CSC 647 Students (Standard Setup)
 
-This package is located at: `~/hsr_robocanes_omniverse/src/csc752-final-project`
+This package is located at: `~/hsr_robocanes_omniverse/src/csc647-final-project`
 
 Your catkin workspace is already set up at `~/hsr_robocanes_omniverse`, so the package is in the right place!
 
@@ -65,7 +65,7 @@ Your catkin workspace is already set up at `~/hsr_robocanes_omniverse`, so the p
 
 ```bash
 # Navigate to package directory
-cd ~/hsr_robocanes_omniverse/src/csc752-final-project
+cd ~/hsr_robocanes_omniverse/src/csc647-final-project
 
 # Install ROS dependencies
 sudo apt-get update
@@ -93,7 +93,7 @@ catkin_make
 source devel/setup.bash
 
 # Verify installation
-rospack find csc752-final-project
+rospack find csc647-final-project
 ```
 
 ## 🚀 Usage
@@ -107,7 +107,7 @@ roscore
 
 # Terminal 2: Launch the package
 s    # Source the workspace first
-roslaunch csc752-final-project lidar_mesh_processing.launch
+roslaunch csc647-final-project lidar_mesh_processing.launch
 ```
 
 #### Option 2: With Isaac Sim
@@ -117,11 +117,11 @@ roscore
 
 # Terminal 2: Start Isaac Sim
 cd ~/hsr_robocanes_omniverse
-python3 csc752-final-project-start.py
+python3 csc647-final-project-start.py
 
 # Terminal 3: Launch LiDAR mesh processing
 s    # Source the workspace
-roslaunch csc752-final-project lidar_mesh_with_isaac.launch
+roslaunch csc647-final-project lidar_mesh_with_isaac.launch
 ```
 
 ### Running Individual Nodes
@@ -131,29 +131,29 @@ roslaunch csc752-final-project lidar_mesh_with_isaac.launch
 s
 
 # LiDAR Activator only
-rosrun csc752-final-project lidar_activator.py
+rosrun csc647-final-project lidar_activator.py
 
 # Mesh Generator only
-rosrun csc752-final-project point_cloud_to_mesh.py
+rosrun csc647-final-project point_cloud_to_mesh.py
 
 # Hough Transform only
-rosrun csc752-final-project hough_transform_processor.py
+rosrun csc647-final-project hough_transform_processor.py
 
 # RViz visualization
-roslaunch csc752-final-project visualization_only.launch
+roslaunch csc647-final-project visualization_only.launch
 ```
 
 ### Launch File Arguments
 
 ```bash
 # Customize scan topic
-roslaunch csc752-final-project lidar_mesh_processing.launch scan_topic:=/custom/scan
+roslaunch csc647-final-project lidar_mesh_processing.launch scan_topic:=/custom/scan
 
 # Disable visualization
-roslaunch csc752-final-project lidar_mesh_processing.launch enable_visualization:=false
+roslaunch csc647-final-project lidar_mesh_processing.launch enable_visualization:=false
 
 # Disable Hough transform
-roslaunch csc752-final-project lidar_mesh_processing.launch enable_hough:=false
+roslaunch csc647-final-project lidar_mesh_processing.launch enable_hough:=false
 ```
 
 ## 📡 Topics
