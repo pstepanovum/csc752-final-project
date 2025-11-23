@@ -1,3 +1,7 @@
+python csc752-final-project-start.py
+roslaunch csc752-final-project lidar_mesh_with_isaac.launch
+
+
 # HSR LiDAR Mesh Processing Package
 
 A ROS Noetic package for activating LiDAR sensors on the Toyota HSR robot, generating meshes from point cloud data, and applying Hough transforms for feature detection.
