@@ -34,7 +34,6 @@ catkin_package(
 catkin_install_python(PROGRAMS
   scripts/lidar_activator.py
   scripts/point_cloud_to_mesh.py
-  scripts/hough_transform_processor.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 

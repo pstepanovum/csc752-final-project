@@ -164,17 +164,6 @@ Visualization Manager:
       Queue Size: 100
       Value: true
 
-    - Alpha: 0.7
-      Class: rviz/Map
-      Color Scheme: map
-      Draw Behind: false
-      Enabled: true
-      Name: HoughGrid
-      Topic: /lidar/hough_grid
-      Unreliable: false
-      Use Timestamp: false
-      Value: true
-
     - Class: rviz/Marker
       Enabled: true
       Marker Topic: /lidar/convex_hull
@@ -193,6 +182,15 @@ Visualization Manager:
       Queue Size: 100
       Value: true
 
+    - Class: rviz/MarkerArray
+      Enabled: true
+      Marker Topic: /lidar/plane_labels
+      Name: PlaneLabels
+      Namespaces:
+        plane_labels: true
+      Queue Size: 100
+      Value: true
+
     - Class: rviz/Camera
       Enabled: true
       Image Rendering: background and overlay
@@ -207,7 +205,6 @@ Visualization Manager:
         ConvexHull: true
         DetectedLines: true
         Grid: false
-        HoughGrid: false
         LaserScan: false
         Map: false
         Mesh: true

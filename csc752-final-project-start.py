@@ -29,9 +29,9 @@ ISAAC_WORLD_NAME = 'hsr_localization_world.py'
 ISAAC_WORLD_PATH = os.path.join(PACKAGE_PATH, ISAAC_WORLD_NAME)
 print(f'Isaac Sim world path:', ISAAC_WORLD_PATH)
 
-RVIZ_NAME = 'lidar_mesh_visualization.rviz'
-RVIZ_PATH = os.path.join(os.path.expanduser('~/hsr_robocanes_omniverse/src/csc752-final-project'), 'rviz', RVIZ_NAME)
-print(f'RVIZ path:', RVIZ_PATH)
+# RVIZ_NAME = 'lidar_mesh_visualization.rviz'
+# RVIZ_PATH = os.path.join(os.path.expanduser('~/hsr_robocanes_omniverse/src/csc752-final-project'), 'rviz', RVIZ_NAME)
+# print(f'RVIZ path:', RVIZ_PATH)
 
 # Commands to start processes
 # No DEBUG
@@ -42,13 +42,13 @@ print(f'RVIZ path:', RVIZ_PATH)
 # DEBUG
 roslaunch_cmd = f"roslaunch {LAUNCH_PATH}"
 isaac_sim_cmd = f"{ISAAC_SIM_PYTHON_PATH} {ISAAC_WORLD_PATH}"
-rviz_cmd = f"rviz -d {RVIZ_PATH}"
+# rviz_cmd = f"rviz -d {RVIZ_PATH}"
 
 # Start processes
 processes = {
     "roslaunch": process_handler.start_process(roslaunch_cmd, capture_output=False),
-    "isaac_sim": process_handler.start_process(isaac_sim_cmd, capture_output=True),
-    "rviz": process_handler.start_process(rviz_cmd, capture_output=False)
+    "isaac_sim": process_handler.start_process(isaac_sim_cmd, capture_output=True)
+    # "rviz": process_handler.start_process(rviz_cmd, capture_output=False)
 }
 
 signal.signal(signal.SIGINT, lambda signum, frame: process_handler.cleanup_exit(processes))

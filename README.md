@@ -24,7 +24,6 @@ hsr_lidar_mesh/
 ├── requirements.txt            # Python dependencies
 ├── csc752-final-project-start.py  # Main startup script
 ├── launch/                     # Launch files
-│   ├── lidar_mesh_processing.launch      # Main launch file
 │   ├── lidar_mesh_with_isaac.launch      # For Isaac Sim integration
 │   └── visualization_only.launch         # RViz only
 ├── scripts/                    # Python nodes (executable)
