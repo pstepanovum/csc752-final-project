@@ -45,7 +45,7 @@ class PointCloudPlaneDetector:
         # ========================================
         # Basic Parameters
         # ========================================
-        self.voxel_size = rospy.get_param('~voxel_size', 0.025)
+        self.voxel_size = rospy.get_param('~voxel_size', 0.0025)
         self.max_distance = rospy.get_param('~max_distance', 100.0)
         self.use_3d_camera = rospy.get_param('~use_3d_camera', True)
 
