@@ -1,0 +1,1008 @@
+[INFO] [1765391798.498024, 203.750011]: ✓ Plane 0: Furniture, 48679 pts, z=3.26m, area=0.30m², conf=0.50
+[INFO] [1765391798.715180, 203.816677]: ✓ Matched: Ceiling (conf: 0.60, obs: 2)
+[INFO] [1765391798.797553, 203.850011]: ✓ Plane 1: Ceiling, 64180 pts, z=4.54m, area=0.40m², conf=0.60
+[INFO] [1765391799.316023, 203.966677]: ✨ New: Ceiling
+[WARN] [1765391799.318138, 203.966677]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391799.397075, 203.983344]: ✓ Plane 2: Wall, 43481 pts, z=3.75m, area=0.27m², conf=0.50
+[INFO] [1765391799.801406, 204.083344]: ✓ Matched: Wall (conf: 0.60, obs: 2)
+[INFO] [1765391799.872564, 204.100011]: ✓ Plane 3: Wall, 39713 pts, z=2.84m, area=0.25m², conf=0.60
+[INFO] [1765391800.165389, 204.166677]: ✨ New: Ceiling
+[WARN] [1765391800.167099, 204.166677]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391800.245367, 204.183344]: ✓ Plane 4: Wall, 27720 pts, z=3.50m, area=0.17m², conf=0.50
+[INFO] [1765391800.471547, 204.233344]: ✨ New: Furniture
+[INFO] [1765391800.504010, 204.233344]: ✓ Plane 5: Furniture, 19379 pts, z=3.79m, area=0.12m², conf=0.50
+[WARN] [1765391800.732415, 204.283344]: ⚠️ Plane 6 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391800.733432, 204.283344]:   ✓ Accepted change (low conf)
+[INFO] [1765391800.734089, 204.283344]: ✓ Matched: Ceiling (conf: 0.50, obs: 2)
+[WARN] [1765391800.734664, 204.283344]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391800.750907, 204.283344]: LiDAR: 8712 scans processed | Valid points: 240/240 (100.0%)
+[INFO] [1765391800.755852, 204.300011]: ✓ Plane 6: Wall, 14468 pts, z=4.25m, area=0.09m², conf=0.50
+[INFO] [1765391800.957336, 204.333344]: ✓ Matched: Furniture (conf: 0.60, obs: 2)
+[INFO] [1765391800.986473, 204.350011]: ✓ Plane 7: Furniture, 14351 pts, z=3.10m, area=0.09m², conf=0.60
+[INFO] [1765391800.987925, 204.350011]: 🧹 Cleaned up 7 old planes
+[INFO] [1765391800.988770, 204.350011]: ✓ Detected 8 planes (0 reliable, history: 72)
+[INFO] [1765391802.180672, 204.766677]: ✓ Matched: Furniture (conf: 0.60, obs: 2)
+[INFO] [1765391802.263012, 204.783344]: ✓ Plane 0: Furniture, 64215 pts, z=3.31m, area=0.40m², conf=0.60
+[INFO] [1765391802.499084, 204.850011]: ✨ New: Ceiling
+[INFO] [1765391802.579044, 204.883344]: ✓ Plane 1: Ceiling, 32752 pts, z=4.41m, area=0.20m², conf=0.50
+[WARN] [1765391803.124932, 205.016677]: ⚠️ Plane 2 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391803.126171, 205.016677]:   ✓ Accepted change (low conf)
+[INFO] [1765391803.127010, 205.016677]: ✓ Matched: Ceiling (conf: 0.50, obs: 2)
+[WARN] [1765391803.127839, 205.016677]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391803.213767, 205.033344]: ✓ Plane 2: Wall, 43062 pts, z=3.75m, area=0.27m², conf=0.50
+[INFO] [1765391803.686970, 205.150011]: ✓ Matched: Wall (conf: 0.70, obs: 3)
+[INFO] [1765391803.764597, 205.166677]: ✓ Plane 3: Wall, 40856 pts, z=2.88m, area=0.26m², conf=0.70
+[INFO] [1765391804.030541, 205.266677]: ✨ New: Ceiling
+[INFO] [1765391804.108502, 205.283344]: ✓ Plane 4: Ceiling, 37163 pts, z=4.60m, area=0.23m², conf=0.50
+[WARN] [1765391804.300399, 205.333344]: ⚠️ Plane 5 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391804.301291, 205.333344]:   ✓ Accepted change (low conf)
+[INFO] [1765391804.301898, 205.333344]: ✓ Matched: Ceiling (conf: 0.50, obs: 2)
+[WARN] [1765391804.302438, 205.333344]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391804.345258, 205.333344]: ✓ Plane 5: Wall, 25646 pts, z=3.48m, area=0.16m², conf=0.50
+[INFO] [1765391804.534303, 205.400011]: ✨ New: Furniture
+[INFO] [1765391804.561600, 205.400011]: ✓ Plane 6: Furniture, 13009 pts, z=3.63m, area=0.08m², conf=0.50
+[INFO] [1765391804.667786, 205.433344]: ✨ New: Ceiling
+[WARN] [1765391804.668751, 205.433344]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391804.682283, 205.433344]: ✓ Plane 7: Wall, 8959 pts, z=4.27m, area=0.06m², conf=0.50
+[INFO] [1765391804.684030, 205.433344]: 🧹 Cleaned up 7 old planes
+[INFO] [1765391804.684893, 205.433344]: ✓ Detected 8 planes (0 reliable, history: 69)
+[INFO] [1765391805.866052, 205.866677]: ✓ Matched: Wall (conf: 0.80, obs: 4)
+[INFO] [1765391805.918185, 205.883344]: ✓ Plane 0: Wall, 41275 pts, z=2.89m, area=0.26m², conf=0.80
+[INFO] [1765391806.129664, 205.916677]: ✓ Matched: Ceiling (conf: 0.70, obs: 3)
+[INFO] [1765391806.220094, 205.933344]: ✓ Plane 1: Ceiling, 66174 pts, z=4.55m, area=0.41m², conf=0.70
+[INFO] [1765391806.649699, 206.050011]: ✨ New: Furniture
+[INFO] [1765391806.729010, 206.083344]: ✓ Plane 2: Furniture, 65267 pts, z=3.21m, area=0.41m², conf=0.50
+[WARN] [1765391807.024626, 206.166677]: ⚠️ Plane 3 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391807.025431, 206.166677]:   ✓ Accepted change (low conf)
+[INFO] [1765391807.026108, 206.166677]: ✓ Matched: Ceiling (conf: 0.50, obs: 3)
+[WARN] [1765391807.026694, 206.166677]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391807.103621, 206.183344]: ✓ Plane 3: Wall, 41789 pts, z=3.74m, area=0.26m², conf=0.50
+[WARN] [1765391807.369383, 206.250011]: ⚠️ Plane 4 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391807.370445, 206.250011]:   ✓ Accepted change (low conf)
+[INFO] [1765391807.371238, 206.250011]: ✓ Matched: Ceiling (conf: 0.50, obs: 3)
+[WARN] [1765391807.371900, 206.250011]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391807.420326, 206.266677]: ✓ Plane 4: Wall, 25703 pts, z=3.48m, area=0.16m², conf=0.50
+[INFO] [1765391807.650522, 206.316677]: ✨ New: Ceiling
+[WARN] [1765391807.651446, 206.316677]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391807.677388, 206.316677]: ✓ Plane 5: Wall, 15580 pts, z=4.29m, area=0.10m², conf=0.50
+[INFO] [1765391807.821488, 206.350011]: ✓ Matched: Furniture (conf: 0.60, obs: 2)
+[INFO] [1765391807.840485, 206.350011]: ✓ Plane 6: Furniture, 13520 pts, z=3.61m, area=0.08m², conf=0.60
+[INFO] [1765391807.903331, 206.366677]: ✨ New: Wall
+[INFO] [1765391807.935560, 206.366677]: ✓ Plane 7: Wall, 5146 pts, z=2.10m, area=0.03m², conf=0.50
+[INFO] [1765391807.936678, 206.366677]: 🧹 Cleaned up 8 old planes
+[INFO] [1765391807.937335, 206.366677]: ✓ Detected 8 planes (1 reliable, history: 64)
+[INFO] [1765391808.832758, 206.716677]: 🧹 Removed 10360 outliers
+[INFO] [1765391809.126228, 206.800011]: ✓ Matched: Ceiling (conf: 0.80, obs: 4)
+[INFO] [1765391809.219839, 206.833344]: ✓ Plane 0: Ceiling, 66478 pts, z=4.55m, area=0.42m², conf=0.80
+[INFO] [1765391809.394374, 206.866677]: ✓ Matched: Wall (conf: 0.90, obs: 5)
+[INFO] [1765391809.443723, 206.883344]: ✓ Plane 1: Wall, 36106 pts, z=2.82m, area=0.23m², conf=0.90
+[INFO] [1765391809.967414, 206.983344]: ✓ Matched: Furniture (conf: 0.60, obs: 2)
+[INFO] [1765391810.063601, 207.000011]: ✓ Plane 2: Furniture, 59443 pts, z=3.21m, area=0.37m², conf=0.60
+[WARN] [1765391810.421505, 207.100011]: ⚠️ Plane 3 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391810.422522, 207.100011]:   ✓ Accepted change (low conf)
+[INFO] [1765391810.423261, 207.100011]: ✓ Matched: Ceiling (conf: 0.50, obs: 4)
+[WARN] [1765391810.423976, 207.100011]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391810.485702, 207.116677]: ✓ Plane 3: Wall, 40403 pts, z=3.75m, area=0.25m², conf=0.50
+[WARN] [1765391810.742075, 207.166677]: ⚠️ Plane 4 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391810.743334, 207.166677]:   ✓ Accepted change (low conf)
+[INFO] [1765391810.744059, 207.166677]: ✓ Matched: Ceiling (conf: 0.50, obs: 4)
+[WARN] [1765391810.744794, 207.166677]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391810.785349, 207.183344]: ✓ Plane 4: Wall, 25820 pts, z=3.49m, area=0.16m², conf=0.50
+[INFO] [1765391810.938346, 207.216677]: ✨ New: Furniture
+[INFO] [1765391810.961613, 207.216677]: ✓ Plane 5: Furniture, 16540 pts, z=3.75m, area=0.10m², conf=0.50
+[WARN] [1765391811.130239, 207.266677]: ⚠️ Plane 6 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391811.131386, 207.266677]:   ✓ Accepted change (low conf)
+[INFO] [1765391811.132092, 207.266677]: ✓ Matched: Ceiling (conf: 0.50, obs: 3)
+[WARN] [1765391811.132713, 207.266677]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391811.179384, 207.283344]: ✓ Plane 6: Wall, 13376 pts, z=4.25m, area=0.08m², conf=0.50
+[INFO] [1765391811.323263, 207.333344]: ✨ New: Wall
+[INFO] [1765391811.338340, 207.333344]: ✓ Plane 7: Wall, 11461 pts, z=2.97m, area=0.07m², conf=0.50
+[INFO] [1765391811.340357, 207.333344]: 🧹 Cleaned up 7 old planes
+[INFO] [1765391811.341263, 207.333344]: ✓ Detected 8 planes (2 reliable, history: 59)
+[INFO] [1765391812.524920, 207.750011]: ✨ New: Wall
+[INFO] [1765391812.594381, 207.766678]: ✓ Plane 0: Wall, 45635 pts, z=3.25m, area=0.29m², conf=0.50
+[INFO] [1765391812.796958, 207.833344]: ✓ Matched: Ceiling (conf: 0.90, obs: 5)
+[INFO] [1765391812.879740, 207.850011]: ✓ Plane 1: Ceiling, 66453 pts, z=4.55m, area=0.42m², conf=0.90
+[WARN] [1765391813.383576, 207.966678]: ⚠️ Plane 2 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391813.384590, 207.983344]:   ✓ Accepted change (low conf)
+[INFO] [1765391813.385342, 207.983344]: ✓ Matched: Ceiling (conf: 0.50, obs: 5)
+[WARN] [1765391813.386036, 207.983344]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391813.468148, 208.000011]: ✓ Plane 2: Wall, 43813 pts, z=3.76m, area=0.27m², conf=0.50
+[INFO] [1765391813.889733, 208.100011]: ✨ New: Ceiling
+[WARN] [1765391813.890714, 208.100011]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391813.946642, 208.116678]: ✓ Plane 3: Wall, 27196 pts, z=3.48m, area=0.17m², conf=0.50
+[INFO] [1765391814.304876, 208.200011]: ✓ Matched: Wall (conf: 1.00, obs: 6)
+[INFO] [1765391814.365281, 208.216678]: ✓ Plane 4: Wall, 37095 pts, z=2.79m, area=0.23m², conf=1.00
+[INFO] [1765391814.580867, 208.266678]: ✓ Matched: Furniture (conf: 0.70, obs: 3)
+[INFO] [1765391814.657828, 208.283344]: ✓ Plane 5: Furniture, 24189 pts, z=3.33m, area=0.15m², conf=0.70
+[WARN] [1765391814.920665, 208.350011]: ⚠️ Plane 6 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391814.923083, 208.350011]:   ✓ Accepted change (low conf)
+[INFO] [1765391814.924416, 208.350011]: ✓ Matched: Ceiling (conf: 0.50, obs: 4)
+[WARN] [1765391814.925407, 208.350011]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391814.969061, 208.350011]: ✓ Plane 6: Wall, 14942 pts, z=4.27m, area=0.09m², conf=0.50
+[INFO] [1765391815.163598, 208.400011]: ✨ New: Furniture
+[INFO] [1765391815.182127, 208.400011]: ✓ Plane 7: Furniture, 8134 pts, z=2.66m, area=0.05m², conf=0.50
+[INFO] [1765391815.184906, 208.400011]: 🧹 Cleaned up 3 old planes
+[INFO] [1765391815.185715, 208.400011]: ✓ Detected 8 planes (2 reliable, history: 59)
+[INFO] [1765391816.439260, 208.850011]: ✓ Matched: Ceiling (conf: 1.00, obs: 6)
+[INFO] [1765391816.540174, 208.883344]: ✓ Plane 0: Ceiling, 66727 pts, z=4.55m, area=0.42m², conf=1.00
+[INFO] [1765391816.743454, 208.933344]: ✓ Matched: Furniture (conf: 0.80, obs: 4)
+[INFO] [1765391816.833346, 208.950011]: ✓ Plane 1: Furniture, 61583 pts, z=3.23m, area=0.38m², conf=0.80
+[INFO] [1765391817.302699, 209.066678]: ✓ Matched: Wall (conf: 1.00, obs: 7)
+[INFO] [1765391817.386726, 209.083344]: ✓ Plane 2: Wall, 41072 pts, z=2.87m, area=0.26m², conf=1.00
+[INFO] [1765391817.752191, 209.150011]: ✓ Matched: Ceiling (conf: 0.60, obs: 2)
+[WARN] [1765391817.753136, 209.150011]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391817.801234, 209.166678]: ✓ Plane 3: Wall, 34983 pts, z=3.62m, area=0.22m², conf=0.60
+[WARN] [1765391818.055737, 209.216678]: ⚠️ Plane 4 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391818.056757, 209.216678]:   ✓ Accepted change (low conf)
+[INFO] [1765391818.057711, 209.216678]: ✓ Matched: Ceiling (conf: 0.50, obs: 5)
+[WARN] [1765391818.058330, 209.216678]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391818.098596, 209.216678]: ✓ Plane 4: Wall, 15499 pts, z=4.28m, area=0.10m², conf=0.50
+[INFO] [1765391818.320270, 209.266678]: ✨ New: Ceiling
+[WARN] [1765391818.321463, 209.266678]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391818.338034, 209.283344]: LiDAR: 9011 scans processed | Valid points: 240/240 (100.0%)
+[INFO] [1765391818.346390, 209.283344]: ✓ Plane 5: Wall, 16315 pts, z=3.85m, area=0.10m², conf=0.50
+[WARN] [1765391818.539381, 209.333344]: ⚠️ Plane 6 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391818.540714, 209.333344]:   ✓ Accepted change (low conf)
+[INFO] [1765391818.541476, 209.333344]: ✓ Matched: Ceiling (conf: 0.50, obs: 2)
+[WARN] [1765391818.542241, 209.333344]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391818.571237, 209.333344]: ✓ Plane 6: Wall, 12121 pts, z=3.51m, area=0.08m², conf=0.50
+[INFO] [1765391818.736573, 209.383344]: ✓ Matched: Furniture (conf: 0.70, obs: 3)
+[INFO] [1765391818.757395, 209.383344]: ✓ Plane 7: Furniture, 13505 pts, z=3.61m, area=0.08m², conf=0.70
+[INFO] [1765391818.761425, 209.383344]: 🧹 Cleaned up 7 old planes
+[INFO] [1765391818.762334, 209.383344]: ✓ Detected 8 planes (3 reliable, history: 53)
+[INFO] [1765391819.967742, 209.816678]: ✨ New: Wall
+[INFO] [1765391820.044466, 209.833344]: ✓ Plane 0: Wall, 52332 pts, z=3.11m, area=0.33m², conf=0.50
+[INFO] [1765391820.263184, 209.900011]: ✓ Matched: Ceiling (conf: 1.00, obs: 7)
+[INFO] [1765391820.355686, 209.933344]: ✓ Plane 1: Ceiling, 65119 pts, z=4.54m, area=0.41m², conf=1.00
+[WARN] [1765391820.785129, 210.050011]: ⚠️ Plane 2 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391820.786291, 210.050011]:   ✓ Accepted change (low conf)
+[INFO] [1765391820.787060, 210.050011]: ✓ Matched: Ceiling (conf: 0.50, obs: 6)
+[WARN] [1765391820.787671, 210.050011]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391820.845768, 210.066678]: ✓ Plane 2: Wall, 40783 pts, z=3.77m, area=0.25m², conf=0.50
+[INFO] [1765391821.250780, 210.150011]: ✓ Matched: Wall (conf: 1.00, obs: 8)
+[INFO] [1765391821.307799, 210.166678]: ✓ Plane 3: Wall, 40176 pts, z=2.84m, area=0.25m², conf=1.00
+[WARN] [1765391821.585178, 210.216678]: ⚠️ Plane 4 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391821.586298, 210.216678]:   ✓ Accepted change (low conf)
+[INFO] [1765391821.587074, 210.216678]: ✓ Matched: Ceiling (conf: 0.50, obs: 5)
+[WARN] [1765391821.587687, 210.216678]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391821.648312, 210.233344]: ✓ Plane 4: Wall, 28025 pts, z=3.51m, area=0.18m², conf=0.50
+[INFO] [1765391821.857214, 210.266678]: ✓ Matched: Furniture (conf: 0.80, obs: 4)
+[INFO] [1765391821.884778, 210.283344]: ✓ Plane 5: Furniture, 19545 pts, z=3.60m, area=0.12m², conf=0.80
+[WARN] [1765391822.114813, 210.316678]: ⚠️ Plane 6 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391822.116001, 210.316678]:   ✓ Accepted change (low conf)
+[INFO] [1765391822.116764, 210.316678]: ✓ Matched: Ceiling (conf: 0.50, obs: 2)
+[WARN] [1765391822.117438, 210.316678]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391822.143225, 210.333344]: ✓ Plane 6: Wall, 15005 pts, z=4.27m, area=0.09m², conf=0.50
+[INFO] [1765391822.297879, 210.366678]: ✨ New: Wall
+[INFO] [1765391822.308238, 210.366678]: ✓ Plane 7: Wall, 7030 pts, z=4.01m, area=0.04m², conf=0.50
+[INFO] [1765391822.310581, 210.366678]: 🧹 Cleaned up 8 old planes
+[INFO] [1765391822.311433, 210.366678]: ✓ Detected 8 planes (3 reliable, history: 47)
+[INFO] [1765391823.531682, 210.783344]: ✨ New: Ceiling
+[INFO] [1765391823.585823, 210.800011]: ✓ Plane 0: Ceiling, 35201 pts, z=3.90m, area=0.22m², conf=0.50
+[INFO] [1765391823.814346, 210.866678]: ✓ Matched: Furniture (conf: 0.90, obs: 5)
+[INFO] [1765391823.912242, 210.883344]: ✓ Plane 1: Furniture, 64761 pts, z=3.28m, area=0.40m², conf=0.90
+[INFO] [1765391824.368643, 211.016678]: ✓ Matched: Ceiling (conf: 1.00, obs: 8)
+[INFO] [1765391824.441290, 211.033344]: ✓ Plane 2: Ceiling, 53010 pts, z=4.57m, area=0.33m², conf=1.00
+[INFO] [1765391824.828181, 211.133344]: ✓ Matched: Wall (conf: 1.00, obs: 9)
+[INFO] [1765391824.907599, 211.150011]: ✓ Plane 3: Wall, 38581 pts, z=2.83m, area=0.24m², conf=1.00
+[WARN] [1765391825.199908, 211.233344]: ⚠️ Plane 4 type changed: Wall → Ceiling (conf=0.60)
+[INFO] [1765391825.201164, 211.233344]:   ✓ Accepted change (low conf)
+[INFO] [1765391825.201914, 211.233344]: ✓ Matched: Ceiling (conf: 0.50, obs: 3)
+[WARN] [1765391825.202680, 211.233344]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391825.259500, 211.250011]: ✓ Plane 4: Wall, 29393 pts, z=3.63m, area=0.18m², conf=0.50
+[WARN] [1765391825.493013, 211.300011]: ⚠️ Plane 5 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391825.494293, 211.300011]:   ✓ Accepted change (low conf)
+[INFO] [1765391825.495102, 211.300011]: ✓ Matched: Ceiling (conf: 0.50, obs: 6)
+[WARN] [1765391825.495761, 211.300011]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391825.515824, 211.300011]: ✓ Plane 5: Wall, 13725 pts, z=4.27m, area=0.09m², conf=0.50
+[INFO] [1765391825.647194, 211.333344]: ✨ New: Ceiling
+[WARN] [1765391825.648352, 211.333344]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391825.669638, 211.333344]: ✓ Plane 6: Wall, 12769 pts, z=3.86m, area=0.08m², conf=0.50
+[INFO] [1765391825.784499, 211.366678]: ✓ Matched: Furniture (conf: 0.90, obs: 5)
+[INFO] [1765391825.804564, 211.366678]: ✓ Plane 7: Furniture, 12798 pts, z=3.56m, area=0.08m², conf=0.90
+[INFO] [1765391825.806245, 211.366678]: 🧹 Cleaned up 8 old planes
+[INFO] [1765391825.807175, 211.366678]: ✓ Detected 8 planes (4 reliable, history: 41)
+[INFO] [1765391826.707429, 211.716678]: 🧹 Removed 10437 outliers
+[INFO] [1765391826.993447, 211.783344]: ✓ Matched: Ceiling (conf: 1.00, obs: 9)
+[INFO] [1765391827.073642, 211.816678]: ✓ Plane 0: Ceiling, 66900 pts, z=4.55m, area=0.42m², conf=1.00
+[INFO] [1765391827.249270, 211.866678]: ✓ Matched: Wall (conf: 1.00, obs: 10)
+[INFO] [1765391827.330978, 211.900011]: ✓ Plane 1: Wall, 40568 pts, z=2.86m, area=0.25m², conf=1.00
+[INFO] [1765391827.840552, 212.000011]: ✓ Matched: Furniture (conf: 1.00, obs: 6)
+[INFO] [1765391827.924006, 212.016678]: ✓ Plane 2: Furniture, 63079 pts, z=3.24m, area=0.39m², conf=1.00
+[WARN] [1765391828.340542, 212.116678]: ⚠️ Plane 3 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391828.341514, 212.116678]:   ✓ Accepted change (low conf)
+[INFO] [1765391828.342168, 212.116678]: ✓ Matched: Ceiling (conf: 0.50, obs: 7)
+[WARN] [1765391828.342727, 212.116678]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391828.427894, 212.133344]: ✓ Plane 3: Wall, 42379 pts, z=3.74m, area=0.26m², conf=0.50
+[WARN] [1765391828.624068, 212.200011]: ⚠️ Plane 4 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391828.625204, 212.200011]:   ✓ Accepted change (low conf)
+[INFO] [1765391828.626066, 212.200011]: ✓ Matched: Ceiling (conf: 0.50, obs: 6)
+[WARN] [1765391828.626674, 212.200011]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391828.660300, 212.216678]: ✓ Plane 4: Wall, 25835 pts, z=3.48m, area=0.16m², conf=0.50
+[WARN] [1765391828.818869, 212.250011]: ⚠️ Plane 5 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391828.820067, 212.250011]:   ✓ Accepted change (low conf)
+[INFO] [1765391828.820778, 212.250011]: ✓ Matched: Ceiling (conf: 0.50, obs: 7)
+[WARN] [1765391828.821447, 212.250011]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391828.851596, 212.266678]: ✓ Plane 5: Wall, 15735 pts, z=4.28m, area=0.10m², conf=0.50
+[INFO] [1765391829.034783, 212.316678]: ✓ Matched: Furniture (conf: 1.00, obs: 6)
+[INFO] [1765391829.063765, 212.316678]: ✓ Plane 6: Furniture, 12282 pts, z=3.62m, area=0.08m², conf=1.00
+[INFO] [1765391829.163243, 212.350011]: ✨ New: Wall
+[INFO] [1765391829.202079, 212.350011]: ✓ Plane 7: Wall, 7225 pts, z=2.39m, area=0.05m², conf=0.50
+[INFO] [1765391829.203470, 212.350011]: 🧹 Cleaned up 4 old planes
+[INFO] [1765391829.204211, 212.350011]: ✓ Detected 8 planes (4 reliable, history: 38)
+[INFO] [1765391830.553295, 212.800011]: ✨ New: Ceiling
+[INFO] [1765391830.631617, 212.816678]: ✓ Plane 0: Ceiling, 35241 pts, z=3.61m, area=0.22m², conf=0.50
+[INFO] [1765391830.918706, 212.900011]: ✓ Matched: Furniture (conf: 0.70, obs: 3)
+[INFO] [1765391831.016843, 212.916678]: ✓ Plane 1: Furniture, 62218 pts, z=3.30m, area=0.39m², conf=0.70
+[INFO] [1765391831.599112, 213.050011]: ✓ Matched: Ceiling (conf: 1.00, obs: 10)
+[INFO] [1765391831.726517, 213.100011]: ✓ Plane 2: Ceiling, 64165 pts, z=4.54m, area=0.40m², conf=1.00
+[INFO] [1765391832.100925, 213.200011]: ✓ Matched: Wall (conf: 1.00, obs: 11)
+[INFO] [1765391832.156479, 213.216678]: ✓ Plane 3: Wall, 38935 pts, z=2.84m, area=0.24m², conf=1.00
+[WARN] [1765391832.434373, 213.283344]: ⚠️ Plane 4 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391832.436950, 213.283344]:   ✓ Accepted change (low conf)
+[INFO] [1765391832.437741, 213.283344]: ✓ Matched: Ceiling (conf: 0.50, obs: 8)
+[WARN] [1765391832.438391, 213.283344]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391832.473359, 213.283344]: ✓ Plane 4: Wall, 21473 pts, z=3.74m, area=0.13m², conf=0.50
+[WARN] [1765391832.724770, 213.366678]: ⚠️ Plane 5 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391832.725664, 213.366678]:   ✓ Accepted change (low conf)
+[INFO] [1765391832.726264, 213.366678]: ✓ Matched: Ceiling (conf: 0.50, obs: 8)
+[WARN] [1765391832.726804, 213.366678]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391832.749049, 213.366678]: ✓ Plane 5: Wall, 15329 pts, z=4.27m, area=0.10m², conf=0.50
+[INFO] [1765391832.930651, 213.400011]: ✨ New: Ceiling
+[WARN] [1765391832.931576, 213.400011]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391832.972637, 213.416678]: ✓ Plane 6: Wall, 10957 pts, z=3.54m, area=0.07m², conf=0.50
+[INFO] [1765391833.108166, 213.433344]: ✓ Matched: Furniture (conf: 1.00, obs: 7)
+[INFO] [1765391833.134604, 213.450011]: ✓ Plane 7: Furniture, 14250 pts, z=3.52m, area=0.09m², conf=1.00
+[INFO] [1765391833.137583, 213.450011]: 🧹 Cleaned up 8 old planes
+[INFO] [1765391833.138505, 213.450011]: ✓ Detected 8 planes (3 reliable, history: 32)
+[INFO] [1765391834.334329, 213.866678]: ✓ Matched: Furniture (conf: 1.00, obs: 7)
+[INFO] [1765391834.407190, 213.883344]: ✓ Plane 0: Furniture, 50605 pts, z=3.27m, area=0.32m², conf=1.00
+[INFO] [1765391834.604635, 213.916678]: ✓ Matched: Wall (conf: 1.00, obs: 12)
+[INFO] [1765391834.656423, 213.933344]: ✓ Plane 1: Wall, 41023 pts, z=2.88m, area=0.26m², conf=1.00
+[INFO] [1765391835.161438, 214.066678]: ✓ Matched: Ceiling (conf: 1.00, obs: 11)
+[INFO] [1765391835.255122, 214.100011]: ✓ Plane 2: Ceiling, 63059 pts, z=4.54m, area=0.39m², conf=1.00
+[WARN] [1765391835.595184, 214.200011]: ⚠️ Plane 3 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391835.596146, 214.200011]:   ✓ Accepted change (low conf)
+[INFO] [1765391835.596714, 214.200011]: ✓ Matched: Ceiling (conf: 0.50, obs: 9)
+[WARN] [1765391835.597259, 214.200011]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391835.661187, 214.216678]: ✓ Plane 3: Wall, 42951 pts, z=3.75m, area=0.27m², conf=0.50
+[WARN] [1765391835.919830, 214.283345]: ⚠️ Plane 4 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391835.920983, 214.283345]:   ✓ Accepted change (low conf)
+[INFO] [1765391835.921683, 214.283345]: ✓ Matched: Ceiling (conf: 0.50, obs: 7)
+[WARN] [1765391835.922307, 214.283345]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391835.961268, 214.283345]: ✓ Plane 4: Wall, 27400 pts, z=3.50m, area=0.17m², conf=0.50
+[INFO] [1765391835.980479, 214.300011]: LiDAR: 9312 scans processed | Valid points: 240/240 (100.0%)
+[INFO] [1765391836.161493, 214.333345]: ✨ New: Furniture
+[INFO] [1765391836.222392, 214.333345]: ✓ Plane 5: Furniture, 19961 pts, z=3.39m, area=0.12m², conf=0.50
+[WARN] [1765391836.381196, 214.366678]: ⚠️ Plane 6 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391836.382585, 214.366678]:   ✓ Accepted change (low conf)
+[INFO] [1765391836.383561, 214.366678]: ✓ Matched: Ceiling (conf: 0.50, obs: 9)
+[WARN] [1765391836.384275, 214.366678]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391836.410840, 214.383345]: ✓ Plane 6: Wall, 15372 pts, z=4.28m, area=0.10m², conf=0.50
+[INFO] [1765391836.561829, 214.416678]: ✓ Matched: Furniture (conf: 1.00, obs: 8)
+[INFO] [1765391836.578827, 214.416678]: ✓ Plane 7: Furniture, 10874 pts, z=3.64m, area=0.07m², conf=1.00
+[INFO] [1765391836.584728, 214.416678]: 🧹 Cleaned up 2 old planes
+[INFO] [1765391836.586012, 214.416678]: ✓ Detected 8 planes (4 reliable, history: 31)
+[INFO] [1765391837.776091, 214.850011]: ✨ New: Ceiling
+[INFO] [1765391837.836913, 214.866678]: ✓ Plane 0: Ceiling, 36799 pts, z=3.87m, area=0.23m², conf=0.50
+[INFO] [1765391838.057397, 214.900011]: ✓ Matched: Ceiling (conf: 1.00, obs: 12)
+[INFO] [1765391838.137415, 214.916678]: ✓ Plane 1: Ceiling, 59226 pts, z=4.54m, area=0.37m², conf=1.00
+[INFO] [1765391838.701352, 215.066678]: ✓ Matched: Furniture (conf: 1.00, obs: 8)
+[INFO] [1765391838.807981, 215.100011]: ✓ Plane 2: Furniture, 64902 pts, z=3.21m, area=0.41m², conf=1.00
+[INFO] [1765391839.226437, 215.216678]: ✓ Matched: Wall (conf: 1.00, obs: 13)
+[INFO] [1765391839.314820, 215.233345]: ✓ Plane 3: Wall, 39577 pts, z=2.88m, area=0.25m², conf=1.00
+[WARN] [1765391839.606241, 215.333345]: ⚠️ Plane 4 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391839.607393, 215.333345]:   ✓ Accepted change (low conf)
+[INFO] [1765391839.608104, 215.333345]: ✓ Matched: Ceiling (conf: 0.50, obs: 10)
+[WARN] [1765391839.608726, 215.333345]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391839.676122, 215.350011]: ✓ Plane 4: Wall, 28803 pts, z=3.76m, area=0.18m², conf=0.50
+[INFO] [1765391839.898119, 215.400011]: ✓ Matched: Furniture (conf: 1.00, obs: 9)
+[INFO] [1765391839.922581, 215.416678]: ✓ Plane 5: Furniture, 14253 pts, z=3.67m, area=0.09m², conf=1.00
+[WARN] [1765391840.098700, 215.450011]: ⚠️ Plane 6 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391840.099888, 215.450011]:   ✓ Accepted change (low conf)
+[INFO] [1765391840.100749, 215.466678]: ✓ Matched: Ceiling (conf: 0.50, obs: 10)
+[WARN] [1765391840.101407, 215.466678]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391840.125411, 215.466678]: ✓ Plane 6: Wall, 12229 pts, z=4.26m, area=0.08m², conf=0.50
+[INFO] [1765391840.270809, 215.500011]: ✨ New: Ceiling
+[WARN] [1765391840.271960, 215.500011]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391840.296741, 215.500011]: ✓ Plane 7: Wall, 14240 pts, z=3.49m, area=0.09m², conf=0.50
+[INFO] [1765391840.300182, 215.500011]: 🧹 Cleaned up 2 old planes
+[INFO] [1765391840.301082, 215.500011]: ✓ Detected 8 planes (4 reliable, history: 31)
+[INFO] [1765391841.502398, 215.916678]: ✓ Matched: Ceiling (conf: 1.00, obs: 13)
+[INFO] [1765391841.590950, 215.950011]: ✓ Plane 0: Ceiling, 66898 pts, z=4.55m, area=0.42m², conf=1.00
+[WARN] [1765391841.784016, 216.016678]: ⚠️ Plane 1 type changed: Wall → Furniture (conf=0.50)
+[INFO] [1765391841.785291, 216.016678]:   ✓ Accepted change (low conf)
+[INFO] [1765391841.786299, 216.016678]: ✓ Matched: Furniture (conf: 0.50, obs: 2)
+[INFO] [1765391841.875961, 216.050011]: ✓ Plane 1: Furniture, 54035 pts, z=3.09m, area=0.34m², conf=0.50
+[INFO] [1765391842.316494, 216.166678]: ✓ Matched: Wall (conf: 1.00, obs: 14)
+[INFO] [1765391842.394765, 216.183345]: ✓ Plane 2: Wall, 41834 pts, z=2.89m, area=0.26m², conf=1.00
+[WARN] [1765391842.707041, 216.266678]: ⚠️ Plane 3 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391842.707936, 216.266678]:   ✓ Accepted change (low conf)
+[INFO] [1765391842.708674, 216.266678]: ✓ Matched: Ceiling (conf: 0.50, obs: 4)
+[WARN] [1765391842.709269, 216.266678]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391842.800046, 216.300011]: ✓ Plane 3: Wall, 36286 pts, z=3.63m, area=0.23m², conf=0.50
+[INFO] [1765391843.052525, 216.366678]: ✓ Matched: Furniture (conf: 1.00, obs: 10)
+[INFO] [1765391843.080734, 216.366678]: ✓ Plane 4: Furniture, 19611 pts, z=3.71m, area=0.12m², conf=1.00
+[WARN] [1765391843.267520, 216.400011]: ⚠️ Plane 5 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391843.271749, 216.400011]:   ✓ Accepted change (low conf)
+[INFO] [1765391843.272412, 216.400011]: ✓ Matched: Ceiling (conf: 0.50, obs: 2)
+[WARN] [1765391843.273119, 216.400011]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391843.316074, 216.416678]: ✓ Plane 5: Wall, 18849 pts, z=3.81m, area=0.12m², conf=0.50
+[WARN] [1765391843.471776, 216.450011]: ⚠️ Plane 6 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391843.472658, 216.450011]:   ✓ Accepted change (low conf)
+[INFO] [1765391843.473170, 216.450011]: ✓ Matched: Ceiling (conf: 0.50, obs: 11)
+[WARN] [1765391843.473682, 216.450011]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391843.495089, 216.450011]: ✓ Plane 6: Wall, 14602 pts, z=4.26m, area=0.09m², conf=0.50
+[WARN] [1765391843.592279, 216.466678]: ⚠️ Plane 7 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391843.593156, 216.466678]:   ✓ Accepted change (low conf)
+[INFO] [1765391843.593830, 216.466678]: ✓ Matched: Ceiling (conf: 0.50, obs: 3)
+[WARN] [1765391843.594457, 216.466678]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391843.614461, 216.483345]: ✓ Plane 7: Wall, 12796 pts, z=3.49m, area=0.08m², conf=0.50
+[INFO] [1765391843.615939, 216.483345]: 🧹 Cleaned up 3 old planes
+[INFO] [1765391843.616784, 216.483345]: ✓ Detected 8 planes (3 reliable, history: 28)
+[INFO] [1765391844.523669, 216.833345]: 🧹 Removed 10324 outliers
+[INFO] [1765391844.821712, 216.900011]: ✓ Matched: Ceiling (conf: 1.00, obs: 14)
+[INFO] [1765391844.902622, 216.933345]: ✓ Plane 0: Ceiling, 66898 pts, z=4.55m, area=0.42m², conf=1.00
+[INFO] [1765391845.099087, 216.983345]: ✓ Matched: Furniture (conf: 0.60, obs: 3)
+[INFO] [1765391845.185140, 217.016678]: ✓ Plane 1: Furniture, 62679 pts, z=3.19m, area=0.39m², conf=0.60
+[WARN] [1765391845.616877, 217.116678]: ⚠️ Plane 2 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391845.617828, 217.116678]:   ✓ Accepted change (low conf)
+[INFO] [1765391845.618414, 217.116678]: ✓ Matched: Ceiling (conf: 0.50, obs: 11)
+[WARN] [1765391845.618979, 217.116678]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391845.674934, 217.133345]: ✓ Plane 2: Wall, 42890 pts, z=3.75m, area=0.27m², conf=0.50
+[INFO] [1765391846.039840, 217.216678]: ✓ Matched: Wall (conf: 1.00, obs: 15)
+[INFO] [1765391846.120600, 217.233345]: ✓ Plane 3: Wall, 40077 pts, z=2.85m, area=0.25m², conf=1.00
+[WARN] [1765391846.309242, 217.300011]: ⚠️ Plane 4 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391846.310367, 217.300011]:   ✓ Accepted change (low conf)
+[INFO] [1765391846.311087, 217.300011]: ✓ Matched: Ceiling (conf: 0.50, obs: 8)
+[WARN] [1765391846.311730, 217.300011]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391846.350753, 217.316678]: ✓ Plane 4: Wall, 27635 pts, z=3.49m, area=0.17m², conf=0.50
+[WARN] [1765391846.502467, 217.350011]: ⚠️ Plane 5 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391846.503793, 217.350011]:   ✓ Accepted change (low conf)
+[INFO] [1765391846.504598, 217.350011]: ✓ Matched: Ceiling (conf: 0.50, obs: 12)
+[WARN] [1765391846.505267, 217.350011]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391846.531733, 217.366678]: ✓ Plane 5: Wall, 15466 pts, z=4.28m, area=0.10m², conf=0.50
+[INFO] [1765391846.656802, 217.383345]: ✓ Matched: Furniture (conf: 1.00, obs: 11)
+[INFO] [1765391846.685062, 217.400011]: ✓ Plane 6: Furniture, 14344 pts, z=3.63m, area=0.09m², conf=1.00
+[INFO] [1765391846.741376, 217.400011]: ✨ New: Wall
+[INFO] [1765391846.757095, 217.400011]: ✓ Plane 7: Wall, 5577 pts, z=2.22m, area=0.03m², conf=0.50
+[INFO] [1765391846.758418, 217.400011]: 🧹 Cleaned up 1 old planes
+[INFO] [1765391846.759173, 217.400011]: ✓ Detected 8 planes (3 reliable, history: 28)
+[WARN] [1765391847.989341, 217.833345]: ⚠️ Plane 0 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391847.990484, 217.833345]:   ✓ Accepted change (low conf)
+[INFO] [1765391847.991299, 217.833345]: ✓ Matched: Ceiling (conf: 0.50, obs: 12)
+[INFO] [1765391848.057750, 217.850011]: ✓ Plane 0: Ceiling, 44706 pts, z=3.77m, area=0.28m², conf=0.50
+[INFO] [1765391848.259049, 217.900011]: ✓ Matched: Wall (conf: 1.00, obs: 16)
+[INFO] [1765391848.327120, 217.916678]: ✓ Plane 1: Wall, 43312 pts, z=2.94m, area=0.27m², conf=1.00
+[INFO] [1765391848.801088, 218.050011]: ✓ Matched: Ceiling (conf: 1.00, obs: 15)
+[INFO] [1765391848.886375, 218.066678]: ✓ Plane 2: Ceiling, 65667 pts, z=4.55m, area=0.41m², conf=1.00
+[INFO] [1765391849.238417, 218.166678]: ✓ Matched: Furniture (conf: 1.00, obs: 9)
+[INFO] [1765391849.332013, 218.200011]: ✓ Plane 3: Furniture, 62425 pts, z=3.19m, area=0.39m², conf=1.00
+[WARN] [1765391849.533735, 218.250011]: ⚠️ Plane 4 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391849.534961, 218.250011]:   ✓ Accepted change (low conf)
+[INFO] [1765391849.535739, 218.250011]: ✓ Matched: Ceiling (conf: 0.50, obs: 9)
+[WARN] [1765391849.536490, 218.250011]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391849.571875, 218.250011]: ✓ Plane 4: Wall, 23998 pts, z=3.49m, area=0.15m², conf=0.50
+[WARN] [1765391849.722062, 218.283345]: ⚠️ Plane 5 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391849.723264, 218.283345]:   ✓ Accepted change (low conf)
+[INFO] [1765391849.723991, 218.283345]: ✓ Matched: Ceiling (conf: 0.50, obs: 13)
+[WARN] [1765391849.724669, 218.283345]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391849.781490, 218.300011]: ✓ Plane 5: Wall, 15291 pts, z=4.29m, area=0.10m², conf=0.50
+[INFO] [1765391849.893824, 218.333345]: ✨ New: Furniture
+[INFO] [1765391849.922366, 218.333345]: ✓ Plane 6: Furniture, 14044 pts, z=3.58m, area=0.09m², conf=0.50
+[INFO] [1765391850.049497, 218.383345]: ✨ New: Wall
+[INFO] [1765391850.066974, 218.383345]: ✓ Plane 7: Wall, 5554 pts, z=2.14m, area=0.03m², conf=0.50
+[INFO] [1765391850.071812, 218.383345]: 🧹 Cleaned up 2 old planes
+[INFO] [1765391850.073667, 218.383345]: ✓ Detected 8 planes (3 reliable, history: 28)
+[INFO] [1765391851.331822, 218.816678]: ✓ Matched: Ceiling (conf: 1.00, obs: 16)
+[INFO] [1765391851.418033, 218.850011]: ✓ Plane 0: Ceiling, 66956 pts, z=4.55m, area=0.42m², conf=1.00
+[INFO] [1765391851.603325, 218.900011]: ✓ Matched: Furniture (conf: 1.00, obs: 10)
+[INFO] [1765391851.694164, 218.933345]: ✓ Plane 1: Furniture, 58438 pts, z=3.27m, area=0.37m², conf=1.00
+[INFO] [1765391852.313972, 219.066678]: ✓ Matched: Wall (conf: 1.00, obs: 17)
+[INFO] [1765391852.399590, 219.100011]: ✓ Plane 2: Wall, 40484 pts, z=2.86m, area=0.25m², conf=1.00
+[INFO] [1765391852.772157, 219.200011]: ✓ Matched: Ceiling (conf: 0.60, obs: 13)
+[WARN] [1765391852.773707, 219.200011]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391852.831828, 219.216678]: ✓ Plane 3: Wall, 42621 pts, z=3.75m, area=0.27m², conf=0.60
+[INFO] [1765391853.113277, 219.283345]: ✨ New: Ceiling
+[WARN] [1765391853.114486, 219.283345]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391853.175807, 219.300011]: LiDAR: 9612 scans processed | Valid points: 240/240 (100.0%)
+[INFO] [1765391853.196132, 219.300011]: ✓ Plane 4: Wall, 26109 pts, z=3.48m, area=0.16m², conf=0.50
+[WARN] [1765391853.437026, 219.366678]: ⚠️ Plane 5 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391853.439556, 219.366678]:   ✓ Accepted change (low conf)
+[INFO] [1765391853.440474, 219.366678]: ✓ Matched: Ceiling (conf: 0.50, obs: 14)
+[WARN] [1765391853.441633, 219.366678]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391853.485062, 219.383345]: ✓ Plane 5: Wall, 15653 pts, z=4.28m, area=0.10m², conf=0.50
+[INFO] [1765391853.690967, 219.433345]: ✨ New: Furniture
+[INFO] [1765391853.718575, 219.450011]: ✓ Plane 6: Furniture, 14422 pts, z=3.01m, area=0.09m², conf=0.50
+[INFO] [1765391853.810036, 219.466678]: ✨ New: Wall
+[INFO] [1765391853.824336, 219.466678]: ✓ Plane 7: Wall, 7318 pts, z=3.06m, area=0.05m², conf=0.50
+[INFO] [1765391853.825459, 219.466678]: 🧹 Cleaned up 3 old planes
+[INFO] [1765391853.826028, 219.466678]: ✓ Detected 8 planes (3 reliable, history: 28)
+[INFO] [1765391855.053393, 219.916678]: ✨ New: Furniture
+[INFO] [1765391855.121572, 219.933345]: ✓ Plane 0: Furniture, 42736 pts, z=3.66m, area=0.27m², conf=0.50
+[INFO] [1765391855.339790, 219.983345]: ✓ Matched: Ceiling (conf: 1.00, obs: 17)
+[INFO] [1765391855.417305, 220.016678]: ✓ Plane 1: Ceiling, 64099 pts, z=4.54m, area=0.40m², conf=1.00
+[INFO] [1765391856.140972, 220.183345]: ✨ New: Ceiling
+[WARN] [1765391856.142380, 220.183345]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391856.233971, 220.200011]: ✓ Plane 2: Wall, 43405 pts, z=3.75m, area=0.27m², conf=0.50
+[INFO] [1765391856.601878, 220.300011]: ✓ Matched: Wall (conf: 1.00, obs: 18)
+[INFO] [1765391856.659120, 220.316678]: ✓ Plane 3: Wall, 41423 pts, z=2.86m, area=0.26m², conf=1.00
+[INFO] [1765391857.014328, 220.383345]: ✨ New: Furniture
+[INFO] [1765391857.117207, 220.416678]: ✓ Plane 4: Furniture, 41232 pts, z=3.10m, area=0.26m², conf=0.50
+[WARN] [1765391857.276209, 220.466678]: ⚠️ Plane 5 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391857.277032, 220.466678]:   ✓ Accepted change (low conf)
+[INFO] [1765391857.278239, 220.466678]: ✓ Matched: Ceiling (conf: 0.50, obs: 2)
+[WARN] [1765391857.278813, 220.466678]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391857.319214, 220.483345]: ✓ Plane 5: Wall, 24811 pts, z=3.47m, area=0.16m², conf=0.50
+[WARN] [1765391857.429911, 220.516678]: ⚠️ Plane 6 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391857.431150, 220.516678]:   ✓ Accepted change (low conf)
+[INFO] [1765391857.431848, 220.516678]: ✓ Matched: Ceiling (conf: 0.50, obs: 15)
+[WARN] [1765391857.432493, 220.516678]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391857.455522, 220.516678]: ✓ Plane 6: Wall, 14116 pts, z=4.25m, area=0.09m², conf=0.50
+[INFO] [1765391857.578079, 220.566678]: ✨ New: Wall
+[INFO] [1765391857.586837, 220.566678]: ✓ Plane 7: Wall, 5001 pts, z=2.13m, area=0.03m², conf=0.50
+[INFO] [1765391857.588649, 220.566678]: ✓ Detected 8 planes (2 reliable, history: 32)
+[INFO] [1765391858.825179, 221.000012]: ✓ Matched: Ceiling (conf: 1.00, obs: 18)
+[INFO] [1765391858.907696, 221.016678]: ✓ Plane 0: Ceiling, 66859 pts, z=4.55m, area=0.42m², conf=1.00
+[INFO] [1765391859.086448, 221.066678]: ✓ Matched: Wall (conf: 1.00, obs: 19)
+[INFO] [1765391859.159173, 221.083345]: ✓ Plane 1: Wall, 40636 pts, z=2.86m, area=0.25m², conf=1.00
+[INFO] [1765391859.711071, 221.216678]: ✓ Matched: Furniture (conf: 1.00, obs: 11)
+[INFO] [1765391859.795215, 221.233345]: ✓ Plane 2: Furniture, 63918 pts, z=3.23m, area=0.40m², conf=1.00
+[WARN] [1765391860.076121, 221.333345]: ⚠️ Plane 3 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391860.077083, 221.333345]:   ✓ Accepted change (low conf)
+[INFO] [1765391860.077794, 221.333345]: ✓ Matched: Ceiling (conf: 0.50, obs: 2)
+[WARN] [1765391860.078449, 221.333345]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391860.159344, 221.350012]: ✓ Plane 3: Wall, 42344 pts, z=3.74m, area=0.26m², conf=0.50
+[WARN] [1765391860.359558, 221.416678]: ⚠️ Plane 4 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391860.363344, 221.416678]:   ✓ Accepted change (low conf)
+[INFO] [1765391860.364362, 221.416678]: ✓ Matched: Ceiling (conf: 0.50, obs: 3)
+[WARN] [1765391860.365215, 221.416678]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391860.422735, 221.416678]: ✓ Plane 4: Wall, 26397 pts, z=3.49m, area=0.16m², conf=0.50
+[WARN] [1765391860.572126, 221.466678]: ⚠️ Plane 5 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391860.572991, 221.466678]:   ✓ Accepted change (low conf)
+[INFO] [1765391860.573643, 221.466678]: ✓ Matched: Ceiling (conf: 0.50, obs: 16)
+[WARN] [1765391860.574147, 221.466678]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391860.591098, 221.466678]: ✓ Plane 5: Wall, 15758 pts, z=4.29m, area=0.10m², conf=0.50
+[INFO] [1765391860.668503, 221.500012]: ✓ Matched: Furniture (conf: 0.60, obs: 2)
+[INFO] [1765391860.681886, 221.500012]: ✓ Plane 6: Furniture, 12550 pts, z=3.65m, area=0.08m², conf=0.60
+[INFO] [1765391860.747608, 221.516678]: ✓ Matched: Wall (conf: 0.60, obs: 2)
+[INFO] [1765391860.759691, 221.516678]: ✓ Plane 7: Wall, 5828 pts, z=2.24m, area=0.04m², conf=0.60
+[INFO] [1765391860.761867, 221.516678]: 🧹 Cleaned up 2 old planes
+[INFO] [1765391860.762722, 221.516678]: ✓ Detected 8 planes (3 reliable, history: 30)
+[INFO] [1765391861.677517, 221.883345]: 🧹 Removed 10411 outliers
+[INFO] [1765391862.025120, 221.966678]: ✓ Matched: Furniture (conf: 0.60, obs: 2)
+[INFO] [1765391862.100062, 221.983345]: ✓ Plane 0: Furniture, 58831 pts, z=3.39m, area=0.37m², conf=0.60
+[INFO] [1765391862.302330, 222.033345]: ✨ New: Wall
+[INFO] [1765391862.377648, 222.050012]: ✓ Plane 1: Wall, 41109 pts, z=2.88m, area=0.26m², conf=0.50
+[INFO] [1765391862.922240, 222.166678]: ✓ Matched: Ceiling (conf: 1.00, obs: 19)
+[INFO] [1765391863.024575, 222.200012]: ✓ Plane 2: Ceiling, 63179 pts, z=4.53m, area=0.39m², conf=1.00
+[WARN] [1765391863.369909, 222.283345]: ⚠️ Plane 3 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391863.370950, 222.283345]:   ✓ Accepted change (low conf)
+[INFO] [1765391863.371753, 222.283345]: ✓ Matched: Ceiling (conf: 0.50, obs: 3)
+[WARN] [1765391863.372377, 222.283345]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391863.437906, 222.300012]: ✓ Plane 3: Wall, 42167 pts, z=3.74m, area=0.26m², conf=0.50
+[WARN] [1765391863.735507, 222.383345]: ⚠️ Plane 4 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391863.736552, 222.383345]:   ✓ Accepted change (low conf)
+[INFO] [1765391863.737240, 222.383345]: ✓ Matched: Ceiling (conf: 0.50, obs: 4)
+[WARN] [1765391863.737765, 222.383345]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391863.761626, 222.383345]: ✓ Plane 4: Wall, 20573 pts, z=3.44m, area=0.13m², conf=0.50
+[INFO] [1765391863.937992, 222.433345]: ✨ New: Furniture
+[INFO] [1765391863.971546, 222.433345]: ✓ Plane 5: Furniture, 19874 pts, z=3.45m, area=0.12m², conf=0.50
+[WARN] [1765391864.115763, 222.466678]: ⚠️ Plane 6 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391864.117319, 222.466678]:   ✓ Accepted change (low conf)
+[INFO] [1765391864.118165, 222.466678]: ✓ Matched: Ceiling (conf: 0.50, obs: 17)
+[WARN] [1765391864.118980, 222.466678]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391864.188272, 222.483345]: ✓ Plane 6: Wall, 14442 pts, z=4.25m, area=0.09m², conf=0.50
+[WARN] [1765391864.336069, 222.516678]: ⚠️ Plane 7 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391864.336993, 222.516678]:   ✓ Accepted change (low conf)
+[INFO] [1765391864.337590, 222.516678]: ✓ Matched: Ceiling (conf: 0.50, obs: 2)
+[WARN] [1765391864.338164, 222.516678]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391864.352828, 222.533345]: ✓ Plane 7: Wall, 8409 pts, z=3.57m, area=0.05m², conf=0.50
+[INFO] [1765391864.354415, 222.533345]: 🧹 Cleaned up 2 old planes
+[INFO] [1765391864.355114, 222.533345]: ✓ Detected 8 planes (1 reliable, history: 30)
+[INFO] [1765391865.536748, 222.950012]: ✨ New: Ceiling
+[INFO] [1765391865.590093, 222.966678]: ✓ Plane 0: Ceiling, 40040 pts, z=3.92m, area=0.25m², conf=0.50
+[INFO] [1765391865.803078, 223.033345]: ✓ Matched: Furniture (conf: 0.70, obs: 3)
+[INFO] [1765391865.892163, 223.050012]: ✓ Plane 1: Furniture, 57075 pts, z=3.33m, area=0.36m², conf=0.70
+[INFO] [1765391866.418142, 223.183345]: ✨ New: Ceiling
+[INFO] [1765391866.520543, 223.216678]: ✓ Plane 2: Ceiling, 50935 pts, z=4.57m, area=0.32m², conf=0.50
+[INFO] [1765391866.901068, 223.300012]: ✓ Matched: Wall (conf: 0.60, obs: 2)
+[INFO] [1765391866.957736, 223.316678]: ✓ Plane 3: Wall, 39828 pts, z=2.86m, area=0.25m², conf=0.60
+[INFO] [1765391867.320720, 223.400012]: ✨ New: Ceiling
+[WARN] [1765391867.321678, 223.400012]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391867.362327, 223.400012]: ✓ Plane 4: Wall, 29210 pts, z=3.78m, area=0.18m², conf=0.50
+[WARN] [1765391867.593150, 223.466678]: ⚠️ Plane 5 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391867.594039, 223.466678]:   ✓ Accepted change (low conf)
+[INFO] [1765391867.594637, 223.466678]: ✓ Matched: Ceiling (conf: 0.50, obs: 2)
+[WARN] [1765391867.595254, 223.466678]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391867.631367, 223.466678]: ✓ Plane 5: Wall, 18055 pts, z=3.51m, area=0.11m², conf=0.50
+[INFO] [1765391867.858424, 223.533345]: ✓ Matched: Furniture (conf: 0.60, obs: 2)
+[INFO] [1765391867.907316, 223.533345]: ✓ Plane 6: Furniture, 15979 pts, z=3.39m, area=0.10m², conf=0.60
+[WARN] [1765391868.095533, 223.583345]: ⚠️ Plane 7 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391868.096509, 223.583345]:   ✓ Accepted change (low conf)
+[INFO] [1765391868.097100, 223.583345]: ✓ Matched: Ceiling (conf: 0.50, obs: 18)
+[WARN] [1765391868.098684, 223.583345]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391868.116418, 223.583345]: ✓ Plane 7: Wall, 12501 pts, z=4.25m, area=0.08m², conf=0.50
+[INFO] [1765391868.122252, 223.583345]: ✓ Detected 8 planes (0 reliable, history: 33)
+[INFO] [1765391869.319232, 223.983345]: ✓ Matched: Ceiling (conf: 1.00, obs: 20)
+[INFO] [1765391869.406011, 224.016678]: ✓ Plane 0: Ceiling, 67174 pts, z=4.55m, area=0.42m², conf=1.00
+[INFO] [1765391869.605620, 224.066678]: ✓ Matched: Furniture (conf: 0.60, obs: 2)
+[INFO] [1765391869.663064, 224.066678]: ✓ Plane 1: Furniture, 42219 pts, z=3.13m, area=0.26m², conf=0.60
+[WARN] [1765391870.158209, 224.183345]: ⚠️ Plane 2 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391870.159198, 224.183345]:   ✓ Accepted change (low conf)
+[INFO] [1765391870.159769, 224.183345]: ✓ Matched: Ceiling (conf: 0.50, obs: 4)
+[WARN] [1765391870.160279, 224.183345]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391870.239939, 224.200012]: ✓ Plane 2: Wall, 43611 pts, z=3.75m, area=0.27m², conf=0.50
+[INFO] [1765391870.579790, 224.283345]: ✓ Matched: Wall (conf: 0.70, obs: 3)
+[INFO] [1765391870.634873, 224.283345]: ✓ Plane 3: Wall, 39815 pts, z=2.84m, area=0.25m², conf=0.70
+[INFO] [1765391870.697500, 224.316678]: LiDAR: 9913 scans processed | Valid points: 240/240 (100.0%)
+[INFO] [1765391870.907307, 224.350012]: ✓ Matched: Furniture (conf: 0.60, obs: 2)
+[INFO] [1765391870.982665, 224.366678]: ✓ Plane 4: Furniture, 38283 pts, z=3.54m, area=0.24m², conf=0.60
+[WARN] [1765391871.213348, 224.416678]: ⚠️ Plane 5 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391871.214547, 224.416678]:   ✓ Accepted change (low conf)
+[INFO] [1765391871.215251, 224.416678]: ✓ Matched: Ceiling (conf: 0.50, obs: 5)
+[WARN] [1765391871.215936, 224.416678]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391871.255769, 224.416678]: ✓ Plane 5: Wall, 26229 pts, z=3.47m, area=0.16m², conf=0.50
+[WARN] [1765391871.388709, 224.450012]: ⚠️ Plane 6 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391871.393519, 224.450012]:   ✓ Accepted change (low conf)
+[INFO] [1765391871.394735, 224.450012]: ✓ Matched: Ceiling (conf: 0.50, obs: 19)
+[WARN] [1765391871.397062, 224.450012]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391871.435578, 224.466678]: ✓ Plane 6: Wall, 14462 pts, z=4.25m, area=0.09m², conf=0.50
+[INFO] [1765391871.544366, 224.483345]: ✨ New: Wall
+[INFO] [1765391871.554426, 224.483345]: ✓ Plane 7: Wall, 5021 pts, z=2.13m, area=0.03m², conf=0.50
+[INFO] [1765391871.557904, 224.483345]: 🧹 Cleaned up 2 old planes
+[INFO] [1765391871.560428, 224.483345]: ✓ Detected 8 planes (1 reliable, history: 32)
+[INFO] [1765391872.763283, 224.883345]: ✓ Matched: Ceiling (conf: 1.00, obs: 21)
+[INFO] [1765391872.855311, 224.916678]: ✓ Plane 0: Ceiling, 66998 pts, z=4.55m, area=0.42m², conf=1.00
+[INFO] [1765391873.046633, 224.950012]: ✓ Matched: Furniture (conf: 1.00, obs: 12)
+[INFO] [1765391873.137058, 224.966678]: ✓ Plane 1: Furniture, 62952 pts, z=3.22m, area=0.39m², conf=1.00
+[INFO] [1765391873.568687, 225.083345]: ✓ Matched: Wall (conf: 0.80, obs: 4)
+[INFO] [1765391873.659098, 225.116678]: ✓ Plane 2: Wall, 40423 pts, z=2.85m, area=0.25m², conf=0.80
+[WARN] [1765391874.095311, 225.200012]: ⚠️ Plane 3 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391874.098791, 225.200012]:   ✓ Accepted change (low conf)
+[INFO] [1765391874.099688, 225.200012]: ✓ Matched: Ceiling (conf: 0.50, obs: 5)
+[WARN] [1765391874.100376, 225.200012]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391874.192744, 225.233345]: ✓ Plane 3: Wall, 42339 pts, z=3.74m, area=0.26m², conf=0.50
+[WARN] [1765391874.485299, 225.316678]: ⚠️ Plane 4 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391874.486430, 225.316678]:   ✓ Accepted change (low conf)
+[INFO] [1765391874.487434, 225.316678]: ✓ Matched: Ceiling (conf: 0.50, obs: 6)
+[WARN] [1765391874.488402, 225.316678]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391874.531219, 225.316678]: ✓ Plane 4: Wall, 25984 pts, z=3.48m, area=0.16m², conf=0.50
+[WARN] [1765391874.676619, 225.350012]: ⚠️ Plane 5 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391874.678036, 225.350012]:   ✓ Accepted change (low conf)
+[INFO] [1765391874.678820, 225.350012]: ✓ Matched: Ceiling (conf: 0.50, obs: 20)
+[WARN] [1765391874.679627, 225.350012]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391874.704015, 225.366678]: ✓ Plane 5: Wall, 15608 pts, z=4.28m, area=0.10m², conf=0.50
+[INFO] [1765391874.833801, 225.383345]: ✓ Matched: Furniture (conf: 0.70, obs: 3)
+[INFO] [1765391874.860812, 225.383345]: ✓ Plane 6: Furniture, 12174 pts, z=3.65m, area=0.08m², conf=0.70
+[INFO] [1765391874.934310, 225.400012]: ✨ New: Wall
+[INFO] [1765391874.949749, 225.400012]: ✓ Plane 7: Wall, 8188 pts, z=2.62m, area=0.05m², conf=0.50
+[INFO] [1765391874.963732, 225.400012]: ✓ Detected 8 planes (3 reliable, history: 33)
+[INFO] [1765391876.181951, 225.800012]: ✓ Matched: Ceiling (conf: 1.00, obs: 22)
+[INFO] [1765391876.261631, 225.816678]: ✓ Plane 0: Ceiling, 67075 pts, z=4.55m, area=0.42m², conf=1.00
+[INFO] [1765391876.447300, 225.866678]: ✨ New: Furniture
+[INFO] [1765391876.532632, 225.883345]: ✓ Plane 1: Furniture, 55740 pts, z=3.24m, area=0.35m², conf=0.50
+[WARN] [1765391876.956008, 225.983345]: ⚠️ Plane 2 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391876.956923, 225.983345]:   ✓ Accepted change (low conf)
+[INFO] [1765391876.957623, 225.983345]: ✓ Matched: Ceiling (conf: 0.50, obs: 6)
+[WARN] [1765391876.958125, 225.983345]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391877.037248, 226.000012]: ✓ Plane 2: Wall, 43648 pts, z=3.75m, area=0.27m², conf=0.50
+[INFO] [1765391877.364883, 226.083345]: ✓ Matched: Wall (conf: 0.90, obs: 5)
+[INFO] [1765391877.439936, 226.100012]: ✓ Plane 3: Wall, 39837 pts, z=2.84m, area=0.25m², conf=0.90
+[WARN] [1765391877.717340, 226.166678]: ⚠️ Plane 4 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391877.718292, 226.166678]:   ✓ Accepted change (low conf)
+[INFO] [1765391877.719141, 226.166678]: ✓ Matched: Ceiling (conf: 0.50, obs: 3)
+[WARN] [1765391877.719869, 226.166678]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391877.762818, 226.183345]: ✓ Plane 4: Wall, 27238 pts, z=3.49m, area=0.17m², conf=0.50
+[INFO] [1765391877.952694, 226.216678]: ✨ New: Wall
+[INFO] [1765391877.982059, 226.233345]: ✓ Plane 5: Wall, 17216 pts, z=3.45m, area=0.11m², conf=0.50
+[WARN] [1765391878.105661, 226.250012]: ⚠️ Plane 6 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391878.106933, 226.250012]:   ✓ Accepted change (low conf)
+[INFO] [1765391878.107749, 226.250012]: ✓ Matched: Ceiling (conf: 0.50, obs: 21)
+[WARN] [1765391878.108381, 226.250012]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391878.132535, 226.250012]: ✓ Plane 6: Wall, 14777 pts, z=4.26m, area=0.09m², conf=0.50
+[INFO] [1765391878.211163, 226.266678]: ✨ New: Furniture
+[INFO] [1765391878.224651, 226.266678]: ✓ Plane 7: Furniture, 7722 pts, z=2.76m, area=0.05m², conf=0.50
+[INFO] [1765391878.226227, 226.266678]: 🧹 Cleaned up 1 old planes
+[INFO] [1765391878.227344, 226.266678]: ✓ Detected 8 planes (2 reliable, history: 35)
+[INFO] [1765391879.445766, 226.666678]: ✓ Matched: Ceiling (conf: 1.00, obs: 23)
+[INFO] [1765391879.524836, 226.666678]: ✓ Plane 0: Ceiling, 67099 pts, z=4.55m, area=0.42m², conf=1.00
+[WARN] [1765391879.723616, 226.716678]: ⚠️ Plane 1 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391879.724533, 226.716678]:   ✓ Accepted change (low conf)
+[INFO] [1765391879.725098, 226.716678]: ✓ Matched: Ceiling (conf: 0.50, obs: 7)
+[WARN] [1765391879.725623, 226.716678]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391879.796342, 226.733345]: ✓ Plane 1: Wall, 45044 pts, z=3.77m, area=0.28m², conf=0.50
+[INFO] [1765391880.261511, 226.850012]: ✓ Matched: Furniture (conf: 1.00, obs: 13)
+[INFO] [1765391880.330966, 226.866678]: ✓ Plane 2: Furniture, 49965 pts, z=3.23m, area=0.31m², conf=1.00
+[INFO] [1765391880.660204, 226.933345]: ✓ Matched: Wall (conf: 1.00, obs: 6)
+[INFO] [1765391880.737337, 226.950012]: ✓ Plane 3: Wall, 39659 pts, z=2.83m, area=0.25m², conf=1.00
+[WARN] [1765391880.983743, 227.000012]: ⚠️ Plane 4 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391880.984732, 227.000012]:   ✓ Accepted change (low conf)
+[INFO] [1765391880.985444, 227.000012]: ✓ Matched: Ceiling (conf: 0.50, obs: 4)
+[WARN] [1765391880.986033, 227.000012]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391881.023260, 227.016679]: ✓ Plane 4: Wall, 26917 pts, z=3.49m, area=0.17m², conf=0.50
+[INFO] [1765391881.258351, 227.050012]: ✨ New: Wall
+[INFO] [1765391881.291709, 227.050012]: ✓ Plane 5: Wall, 21982 pts, z=3.49m, area=0.14m², conf=0.50
+[WARN] [1765391881.412095, 227.083345]: ⚠️ Plane 6 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391881.413246, 227.083345]:   ✓ Accepted change (low conf)
+[INFO] [1765391881.414074, 227.083345]: ✓ Matched: Ceiling (conf: 0.50, obs: 22)
+[WARN] [1765391881.415255, 227.083345]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391881.461692, 227.083345]: ✓ Plane 6: Wall, 14304 pts, z=4.25m, area=0.09m², conf=0.50
+[INFO] [1765391881.547157, 227.100012]: ✨ New: Furniture
+[INFO] [1765391881.559821, 227.100012]: ✓ Plane 7: Furniture, 7274 pts, z=2.50m, area=0.05m², conf=0.50
+[INFO] [1765391881.561222, 227.100012]: 🧹 Cleaned up 3 old planes
+[INFO] [1765391881.562051, 227.100012]: ✓ Detected 8 planes (3 reliable, history: 34)
+[INFO] [1765391882.449613, 227.416679]: 🧹 Removed 10249 outliers
+[INFO] [1765391882.775022, 227.516679]: ✓ Matched: Ceiling (conf: 1.00, obs: 24)
+[INFO] [1765391882.871502, 227.550012]: ✓ Plane 0: Ceiling, 67522 pts, z=4.55m, area=0.42m², conf=1.00
+[INFO] [1765391883.069310, 227.583345]: ✨ New: Furniture
+[INFO] [1765391883.143653, 227.600012]: ✓ Plane 1: Furniture, 55978 pts, z=3.14m, area=0.35m², conf=0.50
+[WARN] [1765391883.590196, 227.716679]: ⚠️ Plane 2 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391883.591388, 227.716679]:   ✓ Accepted change (low conf)
+[INFO] [1765391883.592135, 227.716679]: ✓ Matched: Ceiling (conf: 0.50, obs: 8)
+[WARN] [1765391883.592810, 227.716679]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391883.671951, 227.733345]: ✓ Plane 2: Wall, 44293 pts, z=3.76m, area=0.28m², conf=0.50
+[INFO] [1765391883.975151, 227.833345]: ✓ Matched: Wall (conf: 1.00, obs: 7)
+[INFO] [1765391884.059937, 227.850012]: ✓ Plane 3: Wall, 39655 pts, z=2.83m, area=0.25m², conf=1.00
+[WARN] [1765391884.261977, 227.916679]: ⚠️ Plane 4 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391884.262936, 227.916679]:   ✓ Accepted change (low conf)
+[INFO] [1765391884.263629, 227.916679]: ✓ Matched: Ceiling (conf: 0.50, obs: 5)
+[WARN] [1765391884.264182, 227.916679]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391884.301170, 227.933345]: ✓ Plane 4: Wall, 27503 pts, z=3.49m, area=0.17m², conf=0.50
+[INFO] [1765391884.464406, 227.966679]: ✨ New: Furniture
+[INFO] [1765391884.515148, 227.983345]: ✓ Plane 5: Furniture, 19230 pts, z=3.89m, area=0.12m², conf=0.50
+[WARN] [1765391884.627461, 228.016679]: ⚠️ Plane 6 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391884.628505, 228.016679]:   ✓ Accepted change (low conf)
+[INFO] [1765391884.629177, 228.016679]: ✓ Matched: Ceiling (conf: 0.50, obs: 23)
+[WARN] [1765391884.629819, 228.016679]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391884.650249, 228.016679]: ✓ Plane 6: Wall, 14280 pts, z=4.25m, area=0.09m², conf=0.50
+[INFO] [1765391884.748741, 228.033345]: ✓ Matched: Furniture (conf: 0.60, obs: 2)
+[INFO] [1765391884.762589, 228.033345]: ✓ Plane 7: Furniture, 8637 pts, z=2.52m, area=0.05m², conf=0.60
+[INFO] [1765391884.763950, 228.033345]: 🧹 Cleaned up 3 old planes
+[INFO] [1765391884.764808, 228.033345]: ✓ Detected 8 planes (2 reliable, history: 33)
+[INFO] [1765391885.951890, 228.450012]: ✓ Matched: Ceiling (conf: 1.00, obs: 25)
+[INFO] [1765391886.038068, 228.483345]: ✓ Plane 0: Ceiling, 66968 pts, z=4.55m, area=0.42m², conf=1.00
+[INFO] [1765391886.222294, 228.516679]: ✓ Matched: Furniture (conf: 0.60, obs: 2)
+[INFO] [1765391886.310052, 228.533345]: ✓ Plane 1: Furniture, 58099 pts, z=3.23m, area=0.36m², conf=0.60
+[WARN] [1765391886.757579, 228.683345]: ⚠️ Plane 2 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391886.758544, 228.683345]:   ✓ Accepted change (low conf)
+[INFO] [1765391886.759183, 228.683345]: ✓ Matched: Ceiling (conf: 0.50, obs: 9)
+[WARN] [1765391886.759828, 228.683345]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391886.820264, 228.700012]: ✓ Plane 2: Wall, 41561 pts, z=3.75m, area=0.26m², conf=0.50
+[INFO] [1765391887.203213, 228.800012]: ✓ Matched: Wall (conf: 1.00, obs: 8)
+[INFO] [1765391887.266588, 228.816679]: ✓ Plane 3: Wall, 41729 pts, z=2.88m, area=0.26m², conf=1.00
+[WARN] [1765391887.524090, 228.866679]: ⚠️ Plane 4 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391887.525344, 228.866679]:   ✓ Accepted change (low conf)
+[INFO] [1765391887.526060, 228.866679]: ✓ Matched: Ceiling (conf: 0.50, obs: 6)
+[WARN] [1765391887.526762, 228.866679]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391887.589091, 228.883345]: ✓ Plane 4: Wall, 26078 pts, z=3.49m, area=0.16m², conf=0.50
+[WARN] [1765391887.809332, 228.933345]: ⚠️ Plane 5 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391887.810399, 228.933345]:   ✓ Accepted change (low conf)
+[INFO] [1765391887.811048, 228.933345]: ✓ Matched: Ceiling (conf: 0.50, obs: 24)
+[WARN] [1765391887.811768, 228.933345]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391887.833680, 228.933345]: ✓ Plane 5: Wall, 15133 pts, z=4.28m, area=0.09m², conf=0.50
+[INFO] [1765391888.064677, 229.000012]: ✓ Matched: Furniture (conf: 0.80, obs: 4)
+[INFO] [1765391888.093630, 229.016679]: ✓ Plane 6: Furniture, 14552 pts, z=3.67m, area=0.09m², conf=0.80
+[INFO] [1765391888.203056, 229.033345]: ✨ New: Wall
+[INFO] [1765391888.221633, 229.033345]: ✓ Plane 7: Wall, 7073 pts, z=2.39m, area=0.04m², conf=0.50
+[INFO] [1765391888.227586, 229.050012]: 🧹 Cleaned up 2 old planes
+[INFO] [1765391888.230419, 229.050012]: ✓ Detected 8 planes (3 reliable, history: 32)
+[INFO] [1765391888.905022, 229.316679]: LiDAR: 10213 scans processed | Valid points: 240/240 (100.0%)
+[INFO] [1765391889.392336, 229.466679]: ✨ New: Furniture
+[INFO] [1765391889.444904, 229.483345]: ✓ Plane 0: Furniture, 34964 pts, z=3.56m, area=0.22m², conf=0.50
+[INFO] [1765391889.656943, 229.533345]: ✓ Matched: Ceiling (conf: 1.00, obs: 26)
+[INFO] [1765391889.737636, 229.550012]: ✓ Plane 1: Ceiling, 63464 pts, z=4.54m, area=0.40m², conf=1.00
+[INFO] [1765391890.234459, 229.666679]: ✓ Matched: Furniture (conf: 0.60, obs: 2)
+[INFO] [1765391890.316510, 229.683345]: ✓ Plane 2: Furniture, 46358 pts, z=3.22m, area=0.29m², conf=0.60
+[WARN] [1765391890.906951, 229.816679]: ⚠️ Plane 3 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391890.907938, 229.816679]:   ✓ Accepted change (low conf)
+[INFO] [1765391890.908843, 229.816679]: ✓ Matched: Ceiling (conf: 0.50, obs: 10)
+[WARN] [1765391890.909485, 229.816679]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391890.980840, 229.833345]: ✓ Plane 3: Wall, 40853 pts, z=3.75m, area=0.26m², conf=0.50
+[INFO] [1765391891.331728, 229.900012]: ✓ Matched: Wall (conf: 1.00, obs: 9)
+[INFO] [1765391891.419491, 229.933345]: ✓ Plane 4: Wall, 39825 pts, z=2.84m, area=0.25m², conf=1.00
+[WARN] [1765391891.678012, 230.016679]: ⚠️ Plane 5 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391891.679207, 230.016679]:   ✓ Accepted change (low conf)
+[INFO] [1765391891.680019, 230.016679]: ✓ Matched: Ceiling (conf: 0.50, obs: 7)
+[WARN] [1765391891.680856, 230.016679]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391891.719367, 230.016679]: ✓ Plane 5: Wall, 26373 pts, z=3.48m, area=0.16m², conf=0.50
+[WARN] [1765391891.916512, 230.066679]: ⚠️ Plane 6 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391891.919785, 230.066679]:   ✓ Accepted change (low conf)
+[INFO] [1765391891.921095, 230.066679]: ✓ Matched: Ceiling (conf: 0.50, obs: 25)
+[WARN] [1765391891.922986, 230.066679]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391891.968236, 230.083345]: ✓ Plane 6: Wall, 15045 pts, z=4.27m, area=0.09m², conf=0.50
+[INFO] [1765391892.120836, 230.116679]: ✨ New: Wall
+[INFO] [1765391892.143139, 230.133345]: ✓ Plane 7: Wall, 5800 pts, z=2.26m, area=0.04m², conf=0.50
+[INFO] [1765391892.145457, 230.133345]: 🧹 Cleaned up 3 old planes
+[INFO] [1765391892.147088, 230.133345]: ✓ Detected 8 planes (2 reliable, history: 31)
+[INFO] [1765391893.393980, 230.583345]: ✨ New: Ceiling
+[INFO] [1765391893.475352, 230.600012]: ✓ Plane 0: Ceiling, 67347 pts, z=4.55m, area=0.42m², conf=0.50
+[INFO] [1765391893.665027, 230.666679]: ✓ Matched: Furniture (conf: 0.70, obs: 3)
+[INFO] [1765391893.748955, 230.700012]: ✓ Plane 1: Furniture, 59456 pts, z=3.21m, area=0.37m², conf=0.70
+[WARN] [1765391894.205804, 230.800012]: ⚠️ Plane 2 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391894.206766, 230.800012]:   ✓ Accepted change (low conf)
+[INFO] [1765391894.207439, 230.800012]: ✓ Matched: Ceiling (conf: 0.50, obs: 11)
+[WARN] [1765391894.208035, 230.800012]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391894.263755, 230.816679]: ✓ Plane 2: Wall, 41077 pts, z=3.75m, area=0.26m², conf=0.50
+[INFO] [1765391894.600554, 230.883345]: ✓ Matched: Wall (conf: 1.00, obs: 10)
+[INFO] [1765391894.676322, 230.900012]: ✓ Plane 3: Wall, 40281 pts, z=2.84m, area=0.25m², conf=1.00
+[WARN] [1765391894.895800, 230.950012]: ⚠️ Plane 4 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391894.896833, 230.950012]:   ✓ Accepted change (low conf)
+[INFO] [1765391894.897475, 230.950012]: ✓ Matched: Ceiling (conf: 0.50, obs: 8)
+[WARN] [1765391894.898065, 230.950012]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391894.936036, 230.950012]: ✓ Plane 4: Wall, 27070 pts, z=3.49m, area=0.17m², conf=0.50
+[WARN] [1765391895.100499, 231.000012]: ⚠️ Plane 5 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391895.101416, 231.000012]:   ✓ Accepted change (low conf)
+[INFO] [1765391895.101971, 231.000012]: ✓ Matched: Ceiling (conf: 0.50, obs: 26)
+[WARN] [1765391895.102496, 231.000012]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391895.124141, 231.000012]: ✓ Plane 5: Wall, 15663 pts, z=4.28m, area=0.10m², conf=0.50
+[INFO] [1765391895.260540, 231.033345]: ✓ Matched: Furniture (conf: 0.90, obs: 5)
+[INFO] [1765391895.282940, 231.050012]: ✓ Plane 6: Furniture, 12849 pts, z=3.64m, area=0.08m², conf=0.90
+[INFO] [1765391895.451339, 231.083345]: ✨ New: Wall
+[INFO] [1765391895.487220, 231.100012]: ✓ Plane 7: Wall, 7178 pts, z=2.51m, area=0.04m², conf=0.50
+[INFO] [1765391895.489994, 231.100012]: 🧹 Cleaned up 1 old planes
+[INFO] [1765391895.490774, 231.100012]: ✓ Detected 8 planes (2 reliable, history: 32)
+[WARN] [1765391896.693319, 231.533345]: ⚠️ Plane 0 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391896.694595, 231.533345]:   ✓ Accepted change (low conf)
+[INFO] [1765391896.695404, 231.533345]: ✓ Matched: Ceiling (conf: 0.50, obs: 12)
+[INFO] [1765391896.762542, 231.550012]: ✓ Plane 0: Ceiling, 37406 pts, z=3.74m, area=0.23m², conf=0.50
+[INFO] [1765391897.100646, 231.633345]: ✓ Matched: Ceiling (conf: 0.60, obs: 2)
+[INFO] [1765391897.213537, 231.666679]: ✓ Plane 1: Ceiling, 67065 pts, z=4.55m, area=0.42m², conf=0.60
+[INFO] [1765391897.729731, 231.783345]: ✓ Matched: Furniture (conf: 0.80, obs: 4)
+[INFO] [1765391897.828919, 231.816679]: ✓ Plane 2: Furniture, 60105 pts, z=3.15m, area=0.38m², conf=0.80
+[INFO] [1765391898.246606, 231.916679]: ✓ Matched: Wall (conf: 1.00, obs: 11)
+[INFO] [1765391898.305027, 231.933345]: ✓ Plane 3: Wall, 40396 pts, z=2.85m, area=0.25m², conf=1.00
+[WARN] [1765391898.659727, 232.000012]: ⚠️ Plane 4 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391898.661043, 232.000012]:   ✓ Accepted change (low conf)
+[INFO] [1765391898.661782, 232.000012]: ✓ Matched: Ceiling (conf: 0.50, obs: 9)
+[WARN] [1765391898.662565, 232.000012]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391898.708242, 232.016679]: ✓ Plane 4: Wall, 27195 pts, z=3.49m, area=0.17m², conf=0.50
+[INFO] [1765391898.973772, 232.066679]: ✨ New: Ceiling
+[WARN] [1765391898.974917, 232.066679]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391899.038005, 232.083345]: ✓ Plane 5: Wall, 15940 pts, z=4.30m, area=0.10m², conf=0.50
+[INFO] [1765391899.233044, 232.116679]: ✨ New: Furniture
+[INFO] [1765391899.253146, 232.116679]: ✓ Plane 6: Furniture, 11340 pts, z=4.02m, area=0.07m², conf=0.50
+[INFO] [1765391899.394069, 232.150012]: ✨ New: Furniture
+[INFO] [1765391899.408377, 232.166679]: ✓ Plane 7: Furniture, 8209 pts, z=2.54m, area=0.05m², conf=0.50
+[INFO] [1765391899.409900, 232.166679]: 🧹 Cleaned up 2 old planes
+[INFO] [1765391899.410721, 232.166679]: ✓ Detected 8 planes (2 reliable, history: 33)
+[INFO] [1765391900.302190, 232.483345]: 🧹 Removed 10269 outliers
+[INFO] [1765391900.597521, 232.583345]: ✓ Matched: Ceiling (conf: 0.70, obs: 3)
+[INFO] [1765391900.684290, 232.600012]: ✓ Plane 0: Ceiling, 67332 pts, z=4.55m, area=0.42m², conf=0.70
+[INFO] [1765391900.865405, 232.650012]: ✓ Matched: Furniture (conf: 0.90, obs: 5)
+[INFO] [1765391900.942358, 232.666679]: ✓ Plane 1: Furniture, 59836 pts, z=3.15m, area=0.37m², conf=0.90
+[INFO] [1765391901.485450, 232.800012]: ✓ Matched: Ceiling (conf: 0.60, obs: 13)
+[WARN] [1765391901.486509, 232.800012]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391901.555092, 232.816679]: ✓ Plane 2: Wall, 43938 pts, z=3.76m, area=0.27m², conf=0.60
+[INFO] [1765391901.866874, 232.866679]: ✓ Matched: Wall (conf: 1.00, obs: 12)
+[INFO] [1765391901.927495, 232.883345]: ✓ Plane 3: Wall, 40100 pts, z=2.84m, area=0.25m², conf=1.00
+[WARN] [1765391902.129599, 232.933345]: ⚠️ Plane 4 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391902.131080, 232.933345]:   ✓ Accepted change (low conf)
+[INFO] [1765391902.131864, 232.933345]: ✓ Matched: Ceiling (conf: 0.50, obs: 10)
+[WARN] [1765391902.132501, 232.933345]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391902.192462, 232.950012]: ✓ Plane 4: Wall, 26517 pts, z=3.50m, area=0.17m², conf=0.50
+[WARN] [1765391902.360031, 232.983345]: ⚠️ Plane 5 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391902.361151, 232.983345]:   ✓ Accepted change (low conf)
+[INFO] [1765391902.361864, 232.983345]: ✓ Matched: Ceiling (conf: 0.50, obs: 2)
+[WARN] [1765391902.362511, 232.983345]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391902.385708, 232.983345]: ✓ Plane 5: Wall, 15978 pts, z=4.30m, area=0.10m², conf=0.50
+[INFO] [1765391902.494311, 233.016679]: ✓ Matched: Furniture (conf: 0.60, obs: 2)
+[INFO] [1765391902.511724, 233.016679]: ✓ Plane 6: Furniture, 11607 pts, z=4.02m, area=0.07m², conf=0.60
+[INFO] [1765391902.621083, 233.050012]: ✓ Matched: Furniture (conf: 0.60, obs: 2)
+[INFO] [1765391902.634090, 233.050012]: ✓ Plane 7: Furniture, 8472 pts, z=2.53m, area=0.05m², conf=0.60
+[INFO] [1765391902.636669, 233.050012]: 🧹 Cleaned up 1 old planes
+[INFO] [1765391902.637404, 233.050012]: ✓ Detected 8 planes (2 reliable, history: 32)
+[INFO] [1765391903.839433, 233.450012]: ✓ Matched: Wall (conf: 1.00, obs: 13)
+[INFO] [1765391903.905728, 233.466679]: ✓ Plane 0: Wall, 41446 pts, z=2.89m, area=0.26m², conf=1.00
+[INFO] [1765391904.149280, 233.500012]: ✓ Matched: Ceiling (conf: 0.80, obs: 4)
+[INFO] [1765391904.238145, 233.533346]: ✓ Plane 1: Ceiling, 66442 pts, z=4.55m, area=0.42m², conf=0.80
+[INFO] [1765391904.727003, 233.650012]: ✓ Matched: Furniture (conf: 1.00, obs: 6)
+[INFO] [1765391904.816140, 233.666679]: ✓ Plane 2: Furniture, 61106 pts, z=3.23m, area=0.38m², conf=1.00
+[WARN] [1765391905.147460, 233.750012]: ⚠️ Plane 3 type changed: Wall → Ceiling (conf=0.60)
+[INFO] [1765391905.148605, 233.750012]:   ✓ Accepted change (low conf)
+[INFO] [1765391905.149349, 233.750012]: ✓ Matched: Ceiling (conf: 0.50, obs: 14)
+[WARN] [1765391905.149967, 233.750012]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391905.226320, 233.766679]: ✓ Plane 3: Wall, 42606 pts, z=3.75m, area=0.27m², conf=0.50
+[INFO] [1765391905.426835, 233.833346]: ✨ New: Ceiling
+[WARN] [1765391905.427809, 233.833346]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391905.462021, 233.833346]: ✓ Plane 4: Wall, 24895 pts, z=3.48m, area=0.16m², conf=0.50
+[INFO] [1765391905.619567, 233.883346]: ✓ Matched: Furniture (conf: 1.00, obs: 6)
+[INFO] [1765391905.642158, 233.900012]: ✓ Plane 5: Furniture, 15677 pts, z=3.68m, area=0.10m², conf=1.00
+[WARN] [1765391905.760621, 233.933346]: ⚠️ Plane 6 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391905.761667, 233.933346]:   ✓ Accepted change (low conf)
+[INFO] [1765391905.762372, 233.933346]: ✓ Matched: Ceiling (conf: 0.50, obs: 27)
+[WARN] [1765391905.763004, 233.933346]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391905.790499, 233.933346]: ✓ Plane 6: Wall, 14721 pts, z=4.26m, area=0.09m², conf=0.50
+[INFO] [1765391905.853457, 233.950012]: ✨ New: Wall
+[INFO] [1765391905.859829, 233.950012]: ✓ Plane 7: Wall, 6084 pts, z=2.23m, area=0.04m², conf=0.50
+[INFO] [1765391905.860912, 233.950012]: 🧹 Cleaned up 5 old planes
+[INFO] [1765391905.861723, 233.950012]: ✓ Detected 8 planes (4 reliable, history: 29)
+[INFO] [1765391906.922485, 234.316679]: LiDAR: 10514 scans processed | Valid points: 240/240 (100.0%)
+[INFO] [1765391907.037621, 234.350012]: ✓ Matched: Ceiling (conf: 0.90, obs: 5)
+[INFO] [1765391907.119905, 234.366679]: ✓ Plane 0: Ceiling, 67212 pts, z=4.55m, area=0.42m², conf=0.90
+[INFO] [1765391907.291003, 234.416679]: ✓ Matched: Furniture (conf: 1.00, obs: 7)
+[INFO] [1765391907.377552, 234.433346]: ✓ Plane 1: Furniture, 63392 pts, z=3.21m, area=0.40m², conf=1.00
+[WARN] [1765391907.787496, 234.550012]: ⚠️ Plane 2 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391907.788580, 234.550012]:   ✓ Accepted change (low conf)
+[INFO] [1765391907.789171, 234.550012]: ✓ Matched: Ceiling (conf: 0.50, obs: 15)
+[WARN] [1765391907.789728, 234.550012]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391907.868865, 234.566679]: ✓ Plane 2: Wall, 43302 pts, z=3.75m, area=0.27m², conf=0.50
+[INFO] [1765391908.200731, 234.666679]: ✓ Matched: Wall (conf: 1.00, obs: 14)
+[INFO] [1765391908.286765, 234.683346]: ✓ Plane 3: Wall, 39689 pts, z=2.83m, area=0.25m², conf=1.00
+[WARN] [1765391908.490273, 234.733346]: ⚠️ Plane 4 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391908.491183, 234.733346]:   ✓ Accepted change (low conf)
+[INFO] [1765391908.491829, 234.733346]: ✓ Matched: Ceiling (conf: 0.50, obs: 11)
+[WARN] [1765391908.492420, 234.733346]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391908.529696, 234.750012]: ✓ Plane 4: Wall, 27375 pts, z=3.49m, area=0.17m², conf=0.50
+[WARN] [1765391908.697300, 234.783346]: ⚠️ Plane 5 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391908.698442, 234.783346]:   ✓ Accepted change (low conf)
+[INFO] [1765391908.699220, 234.783346]: ✓ Matched: Ceiling (conf: 0.50, obs: 3)
+[WARN] [1765391908.699828, 234.783346]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391908.719716, 234.800012]: ✓ Plane 5: Wall, 15819 pts, z=4.29m, area=0.10m², conf=0.50
+[INFO] [1765391908.861972, 234.833346]: ✓ Matched: Furniture (conf: 1.00, obs: 7)
+[INFO] [1765391908.881614, 234.833346]: ✓ Plane 6: Furniture, 11553 pts, z=3.64m, area=0.07m², conf=1.00
+[INFO] [1765391908.964766, 234.866679]: ✓ Matched: Wall (conf: 0.60, obs: 2)
+[INFO] [1765391908.977004, 234.866679]: ✓ Plane 7: Wall, 7445 pts, z=2.65m, area=0.05m², conf=0.60
+[INFO] [1765391908.978252, 234.866679]: 🧹 Cleaned up 3 old planes
+[INFO] [1765391908.978939, 234.866679]: ✓ Detected 8 planes (4 reliable, history: 26)
+[INFO] [1765391910.178670, 235.250012]: ✓ Matched: Ceiling (conf: 1.00, obs: 6)
+[INFO] [1765391910.260033, 235.266679]: ✓ Plane 0: Ceiling, 66877 pts, z=4.55m, area=0.42m², conf=1.00
+[INFO] [1765391910.446020, 235.316679]: ✨ New: Furniture
+[INFO] [1765391910.511467, 235.333346]: ✓ Plane 1: Furniture, 39725 pts, z=3.58m, area=0.25m², conf=0.50
+[WARN] [1765391911.012518, 235.466679]: ⚠️ Plane 2 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391911.013465, 235.466679]:   ✓ Accepted change (low conf)
+[INFO] [1765391911.014030, 235.466679]: ✓ Matched: Ceiling (conf: 0.50, obs: 16)
+[WARN] [1765391911.014494, 235.466679]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391911.060057, 235.466679]: ✓ Plane 2: Wall, 42611 pts, z=3.75m, area=0.27m², conf=0.50
+[INFO] [1765391911.418758, 235.566679]: ✨ New: Furniture
+[INFO] [1765391911.495397, 235.583346]: ✓ Plane 3: Furniture, 41095 pts, z=3.11m, area=0.26m², conf=0.50
+[INFO] [1765391911.792123, 235.650012]: ✓ Matched: Wall (conf: 1.00, obs: 15)
+[INFO] [1765391911.874396, 235.666679]: ✓ Plane 4: Wall, 41287 pts, z=2.86m, area=0.26m², conf=1.00
+[WARN] [1765391912.026142, 235.716679]: ⚠️ Plane 5 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391912.027557, 235.716679]:   ✓ Accepted change (low conf)
+[INFO] [1765391912.028242, 235.716679]: ✓ Matched: Ceiling (conf: 0.50, obs: 12)
+[WARN] [1765391912.028825, 235.716679]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391912.094609, 235.733346]: ✓ Plane 5: Wall, 25227 pts, z=3.47m, area=0.16m², conf=0.50
+[WARN] [1765391912.187049, 235.766679]: ⚠️ Plane 6 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391912.187971, 235.766679]:   ✓ Accepted change (low conf)
+[INFO] [1765391912.188569, 235.766679]: ✓ Matched: Ceiling (conf: 0.50, obs: 28)
+[WARN] [1765391912.189180, 235.766679]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391912.210583, 235.766679]: ✓ Plane 6: Wall, 13859 pts, z=4.25m, area=0.09m², conf=0.50
+[INFO] [1765391912.270077, 235.783346]: ✨ New: Wall
+[INFO] [1765391912.283600, 235.800012]: ✓ Plane 7: Wall, 5794 pts, z=2.16m, area=0.04m², conf=0.50
+[INFO] [1765391912.284881, 235.800012]: 🧹 Cleaned up 1 old planes
+[INFO] [1765391912.285640, 235.800012]: ✓ Detected 8 planes (2 reliable, history: 28)
+[INFO] [1765391913.458834, 236.200012]: ✓ Matched: Furniture (conf: 0.60, obs: 2)
+[INFO] [1765391913.527953, 236.216679]: ✓ Plane 0: Furniture, 45525 pts, z=3.28m, area=0.28m², conf=0.60
+[INFO] [1765391913.715573, 236.266679]: ✓ Matched: Wall (conf: 1.00, obs: 16)
+[INFO] [1765391913.769289, 236.283346]: ✓ Plane 1: Wall, 41397 pts, z=2.89m, area=0.26m², conf=1.00
+[INFO] [1765391914.251613, 236.400012]: ✓ Matched: Ceiling (conf: 1.00, obs: 7)
+[INFO] [1765391914.331259, 236.433346]: ✓ Plane 2: Ceiling, 62732 pts, z=4.53m, area=0.39m², conf=1.00
+[WARN] [1765391914.684774, 236.516679]: ⚠️ Plane 3 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391914.685598, 236.516679]:   ✓ Accepted change (low conf)
+[INFO] [1765391914.686430, 236.516679]: ✓ Matched: Ceiling (conf: 0.50, obs: 17)
+[WARN] [1765391914.687032, 236.516679]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391914.756896, 236.533346]: ✓ Plane 3: Wall, 43431 pts, z=3.75m, area=0.27m², conf=0.50
+[INFO] [1765391915.018677, 236.616679]: ✓ Matched: Furniture (conf: 0.60, obs: 2)
+[INFO] [1765391915.101842, 236.633346]: ✓ Plane 4: Furniture, 38012 pts, z=3.54m, area=0.24m², conf=0.60
+[WARN] [1765391915.242005, 236.666679]: ⚠️ Plane 5 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391915.243017, 236.666679]:   ✓ Accepted change (low conf)
+[INFO] [1765391915.243720, 236.666679]: ✓ Matched: Ceiling (conf: 0.50, obs: 13)
+[WARN] [1765391915.245399, 236.666679]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391915.287717, 236.683346]: ✓ Plane 5: Wall, 26760 pts, z=3.47m, area=0.17m², conf=0.50
+[WARN] [1765391915.389007, 236.700012]: ⚠️ Plane 6 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391915.390862, 236.700012]:   ✓ Accepted change (low conf)
+[INFO] [1765391915.392362, 236.700012]: ✓ Matched: Ceiling (conf: 0.50, obs: 29)
+[WARN] [1765391915.392998, 236.700012]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391915.417663, 236.716679]: ✓ Plane 6: Wall, 14281 pts, z=4.25m, area=0.09m², conf=0.50
+[INFO] [1765391915.473381, 236.733346]: ✓ Matched: Wall (conf: 0.60, obs: 2)
+[INFO] [1765391915.482591, 236.733346]: ✓ Plane 7: Wall, 5218 pts, z=2.12m, area=0.03m², conf=0.60
+[INFO] [1765391915.483688, 236.733346]: 🧹 Cleaned up 2 old planes
+[INFO] [1765391915.484333, 236.733346]: ✓ Detected 8 planes (2 reliable, history: 26)
+[INFO] [1765391916.648086, 237.116679]: ✓ Matched: Ceiling (conf: 1.00, obs: 8)
+[INFO] [1765391916.736485, 237.133346]: ✓ Plane 0: Ceiling, 67129 pts, z=4.55m, area=0.42m², conf=1.00
+[INFO] [1765391916.940274, 237.183346]: ✓ Matched: Wall (conf: 1.00, obs: 17)
+[INFO] [1765391916.992950, 237.200012]: ✓ Plane 1: Wall, 40732 pts, z=2.86m, area=0.25m², conf=1.00
+[INFO] [1765391917.507621, 237.316679]: ✓ Matched: Furniture (conf: 1.00, obs: 8)
+[INFO] [1765391917.599249, 237.333346]: ✓ Plane 2: Furniture, 63910 pts, z=3.20m, area=0.40m², conf=1.00
+[WARN] [1765391917.908899, 237.416679]: ⚠️ Plane 3 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391917.910123, 237.416679]:   ✓ Accepted change (low conf)
+[INFO] [1765391917.911112, 237.416679]: ✓ Matched: Ceiling (conf: 0.50, obs: 18)
+[WARN] [1765391917.911793, 237.416679]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391917.977069, 237.416679]: ✓ Plane 3: Wall, 38505 pts, z=3.74m, area=0.24m², conf=0.50
+[WARN] [1765391918.211321, 237.466679]: ⚠️ Plane 4 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391918.212468, 237.466679]:   ✓ Accepted change (low conf)
+[INFO] [1765391918.213134, 237.466679]: ✓ Matched: Ceiling (conf: 0.50, obs: 14)
+[WARN] [1765391918.213785, 237.466679]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391918.251745, 237.483346]: ✓ Plane 4: Wall, 27146 pts, z=3.49m, area=0.17m², conf=0.50
+[WARN] [1765391918.411598, 237.516679]: ⚠️ Plane 5 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391918.412691, 237.516679]:   ✓ Accepted change (low conf)
+[INFO] [1765391918.413465, 237.516679]: ✓ Matched: Ceiling (conf: 0.50, obs: 30)
+[WARN] [1765391918.414090, 237.516679]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391918.437320, 237.516679]: ✓ Plane 5: Wall, 15766 pts, z=4.29m, area=0.10m², conf=0.50
+[INFO] [1765391918.548336, 237.533346]: ✓ Matched: Furniture (conf: 1.00, obs: 8)
+[INFO] [1765391918.566842, 237.550012]: ✓ Plane 6: Furniture, 11482 pts, z=3.64m, area=0.07m², conf=1.00
+[INFO] [1765391918.651939, 237.566679]: ✨ New: Wall
+[INFO] [1765391918.661520, 237.566679]: ✓ Plane 7: Wall, 5603 pts, z=2.46m, area=0.04m², conf=0.50
+[INFO] [1765391918.665838, 237.566679]: 🧹 Cleaned up 2 old planes
+[INFO] [1765391918.666581, 237.566679]: ✓ Detected 8 planes (4 reliable, history: 25)
+[INFO] [1765391919.568333, 237.883346]: 🧹 Removed 10350 outliers
+[INFO] [1765391919.869528, 237.966679]: ✓ Matched: Ceiling (conf: 1.00, obs: 9)
+[INFO] [1765391919.952061, 237.983346]: ✓ Plane 0: Ceiling, 67116 pts, z=4.55m, area=0.42m², conf=1.00
+[INFO] [1765391920.156918, 238.050012]: ✨ New: Furniture
+[INFO] [1765391920.224514, 238.066679]: ✓ Plane 1: Furniture, 38493 pts, z=3.17m, area=0.24m², conf=0.50
+[WARN] [1765391920.698536, 238.183346]: ⚠️ Plane 2 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391920.699816, 238.183346]:   ✓ Accepted change (low conf)
+[INFO] [1765391920.700512, 238.183346]: ✓ Matched: Ceiling (conf: 0.50, obs: 19)
+[WARN] [1765391920.701236, 238.183346]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391920.764471, 238.200012]: ✓ Plane 2: Wall, 43478 pts, z=3.76m, area=0.27m², conf=0.50
+[INFO] [1765391921.149702, 238.283346]: ✓ Matched: Wall (conf: 1.00, obs: 18)
+[INFO] [1765391921.230581, 238.300012]: ✓ Plane 3: Wall, 39908 pts, z=2.84m, area=0.25m², conf=1.00
+[WARN] [1765391921.568492, 238.383346]: ⚠️ Plane 4 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391921.569360, 238.383346]:   ✓ Accepted change (low conf)
+[INFO] [1765391921.569984, 238.383346]: ✓ Matched: Ceiling (conf: 0.50, obs: 15)
+[WARN] [1765391921.570533, 238.383346]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391921.648228, 238.400012]: ✓ Plane 4: Wall, 27215 pts, z=3.50m, area=0.17m², conf=0.50
+[INFO] [1765391921.845931, 238.450012]: ✨ New: Furniture
+[INFO] [1765391921.889633, 238.450012]: ✓ Plane 5: Furniture, 26016 pts, z=3.30m, area=0.16m², conf=0.50
+[WARN] [1765391922.056334, 238.500012]: ⚠️ Plane 6 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391922.057638, 238.500012]:   ✓ Accepted change (low conf)
+[INFO] [1765391922.058407, 238.500012]: ✓ Matched: Ceiling (conf: 0.50, obs: 31)
+[WARN] [1765391922.059181, 238.500012]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391922.085762, 238.500012]: ✓ Plane 6: Wall, 15555 pts, z=4.28m, area=0.10m², conf=0.50
+[INFO] [1765391922.183396, 238.516679]: ✓ Matched: Furniture (conf: 1.00, obs: 9)
+[INFO] [1765391922.206123, 238.533346]: ✓ Plane 7: Furniture, 12294 pts, z=3.63m, area=0.08m², conf=1.00
+[INFO] [1765391922.207920, 238.533346]: 🧹 Cleaned up 2 old planes
+[INFO] [1765391922.208734, 238.533346]: ✓ Detected 8 planes (3 reliable, history: 25)
+[INFO] [1765391923.438485, 238.933346]: ✨ New: Furniture
+[INFO] [1765391923.519785, 238.950012]: ✓ Plane 0: Furniture, 51349 pts, z=3.32m, area=0.32m², conf=0.50
+[INFO] [1765391923.716003, 239.000012]: ✨ New: Ceiling
+[INFO] [1765391923.778353, 239.016679]: ✓ Plane 1: Ceiling, 34996 pts, z=3.86m, area=0.22m², conf=0.50
+[INFO] [1765391924.361418, 239.133346]: ✓ Matched: Ceiling (conf: 1.00, obs: 10)
+[INFO] [1765391924.445234, 239.150012]: ✓ Plane 2: Ceiling, 56941 pts, z=4.52m, area=0.36m², conf=1.00
+[INFO] [1765391924.985743, 239.300012]: ✓ Matched: Wall (conf: 1.00, obs: 19)
+[INFO] [1765391925.055577, 239.316679]: LiDAR: 10813 scans processed | Valid points: 240/240 (100.0%)
+[INFO] [1765391925.080792, 239.316679]: ✓ Plane 3: Wall, 38914 pts, z=2.83m, area=0.24m², conf=1.00
+[INFO] [1765391925.411701, 239.383346]: ✨ New: Ceiling
+[WARN] [1765391925.412690, 239.383346]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391925.443858, 239.400012]: ✓ Plane 4: Wall, 25311 pts, z=3.74m, area=0.16m², conf=0.50
+[INFO] [1765391925.742479, 239.466679]: ✓ Matched: Furniture (conf: 0.70, obs: 3)
+[INFO] [1765391925.777220, 239.466679]: ✓ Plane 5: Furniture, 19790 pts, z=3.63m, area=0.12m², conf=0.70
+[WARN] [1765391925.939041, 239.500012]: ⚠️ Plane 6 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391925.940252, 239.500012]:   ✓ Accepted change (low conf)
+[INFO] [1765391925.940834, 239.500012]: ✓ Matched: Ceiling (conf: 0.50, obs: 16)
+[WARN] [1765391925.941375, 239.500012]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391925.962605, 239.516679]: ✓ Plane 6: Wall, 14998 pts, z=3.49m, area=0.09m², conf=0.50
+[WARN] [1765391926.130176, 239.550012]: ⚠️ Plane 7 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391926.132502, 239.550012]:   ✓ Accepted change (low conf)
+[INFO] [1765391926.133568, 239.550012]: ✓ Matched: Ceiling (conf: 0.50, obs: 32)
+[WARN] [1765391926.134158, 239.550012]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391926.151870, 239.550012]: ✓ Plane 7: Wall, 11998 pts, z=4.25m, area=0.07m², conf=0.50
+[INFO] [1765391926.153365, 239.566679]: 🧹 Cleaned up 1 old planes
+[INFO] [1765391926.154039, 239.566679]: ✓ Detected 8 planes (2 reliable, history: 27)
+[INFO] [1765391927.329623, 240.000013]: ✨ New: Ceiling
+[INFO] [1765391927.369538, 240.016679]: ✓ Plane 0: Ceiling, 36442 pts, z=3.93m, area=0.23m², conf=0.50
+[INFO] [1765391927.596186, 240.050013]: ✓ Matched: Furniture (conf: 0.80, obs: 4)
+[INFO] [1765391927.673780, 240.066679]: ✓ Plane 1: Furniture, 40523 pts, z=3.62m, area=0.25m², conf=0.80
+[INFO] [1765391928.358234, 240.250013]: ✓ Matched: Ceiling (conf: 1.00, obs: 11)
+[INFO] [1765391928.435273, 240.266679]: ✓ Plane 2: Ceiling, 53865 pts, z=4.54m, area=0.34m², conf=1.00
+[INFO] [1765391928.877180, 240.366679]: ✓ Matched: Wall (conf: 1.00, obs: 20)
+[INFO] [1765391928.949958, 240.383346]: ✓ Plane 3: Wall, 38168 pts, z=2.81m, area=0.24m², conf=1.00
+[INFO] [1765391929.282613, 240.483346]: ✓ Matched: Furniture (conf: 0.70, obs: 3)
+[INFO] [1765391929.347471, 240.500013]: ✓ Plane 4: Furniture, 41761 pts, z=3.13m, area=0.26m², conf=0.70
+[WARN] [1765391929.617734, 240.550013]: ⚠️ Plane 5 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391929.618922, 240.550013]:   ✓ Accepted change (low conf)
+[INFO] [1765391929.619673, 240.550013]: ✓ Matched: Ceiling (conf: 0.50, obs: 2)
+[WARN] [1765391929.620338, 240.550013]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391929.675582, 240.566679]: ✓ Plane 5: Wall, 32289 pts, z=3.76m, area=0.20m², conf=0.50
+[INFO] [1765391929.845572, 240.616679]: ✨ New: Ceiling
+[WARN] [1765391929.846813, 240.616679]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391929.904917, 240.633346]: ✓ Plane 6: Wall, 17189 pts, z=3.49m, area=0.11m², conf=0.50
+[WARN] [1765391930.054964, 240.650013]: ⚠️ Plane 7 type changed: Wall → Ceiling (conf=0.50)
+[INFO] [1765391930.056078, 240.650013]:   ✓ Accepted change (low conf)
+[INFO] [1765391930.056810, 240.650013]: ✓ Matched: Ceiling (conf: 0.50, obs: 33)
+[WARN] [1765391930.057407, 240.650013]:   ⚠️ Multiple ceilings? Changed to Wall
+[INFO] [1765391930.084935, 240.666679]: ✓ Plane 7: Wall, 12096 pts, z=4.25m, area=0.08m², conf=0.50
+[INFO] [1765391930.086345, 240.666679]: 🧹 Cleaned up 4 old planes
+[INFO] [1765391930.087861, 240.666679]: ✓ Detected 8 planes (3 reliable, history: 25)

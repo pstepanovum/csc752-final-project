@@ -26,6 +26,8 @@ Topics:
 import rospy
 import numpy as np
 import time
+import os
+from datetime import datetime
 from sensor_msgs.msg import PointCloud2
 from sensor_msgs import point_cloud2
 from nav_msgs.msg import Odometry
@@ -94,6 +96,26 @@ class PointCloudPlaneDetector:
         self.frame_times = []
         self.frame_counter = 0
 
+        # ========================================
+        # Log File Setup
+        # ========================================
+        # Create output directory if it doesn't exist
+        self.output_dir = '/home/csc752/hsr_robocanes_omniverse/src/csc752-final-project/output'
+        if not os.path.exists(self.output_dir):
+            os.makedirs(self.output_dir)
+        
+        # Create log file with timestamp
+        timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+        self.log_filename = os.path.join(self.output_dir, f'plane_detection_log_{timestamp}.txt')
+        self.log_file = open(self.log_filename, 'w')
+        
+        # Write header
+        self.write_log("=" * 70)
+        self.write_log("PLANE DETECTION SESSION LOG")
+        self.write_log(f"Started: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+        self.write_log("=" * 70)
+        self.write_log("")
+
         # Clear old markers
         self.clear_old_markers()
 
@@ -108,10 +130,10 @@ class PointCloudPlaneDetector:
                 PointCloud2,
                 self.cloud_callback
             )
-            rospy.loginfo("Using RGB-D camera for plane detection")
+            self.write_log("Using RGB-D camera for plane detection")
         else:
             self.cloud_sub = rospy.Subscriber('/lidar/point_cloud', PointCloud2, self.cloud_callback)
-            rospy.loginfo("Using LiDAR for plane detection")
+            self.write_log("Using LiDAR for plane detection")
         
         # Odometry (for motion detection)
         self.odom_sub = rospy.Subscriber(
@@ -120,14 +142,37 @@ class PointCloudPlaneDetector:
             self.odom_callback
         )
 
-        rospy.loginfo("=" * 70)
-        rospy.loginfo("ROBUST Plane Detector INITIALIZED - Production Mode")
-        rospy.loginfo("=" * 70)
-        rospy.loginfo("✅ Strict classification thresholds")
-        rospy.loginfo("✅ Label stability locking")
-        rospy.loginfo("✅ Confidence-based filtering")
-        rospy.loginfo("✅ Robot motion detection")
-        rospy.loginfo("=" * 70)
+        self.write_log("=" * 70)
+        self.write_log("ROBUST Plane Detector INITIALIZED - Production Mode")
+        self.write_log("=" * 70)
+        self.write_log("✅ Strict classification thresholds")
+        self.write_log("✅ Label stability locking")
+        self.write_log("✅ Confidence-based filtering")
+        self.write_log("✅ Robot motion detection")
+        self.write_log(f"✅ Log file: {self.log_filename}")
+        self.write_log("=" * 70)
+
+    def write_log(self, message, level='INFO'):
+        """
+        Write message to both console (rospy) and log file.
+        
+        Args:
+            message: Message to log
+            level: Log level ('INFO', 'WARN', 'ERROR')
+        """
+        # Write to console via rospy
+        if level == 'INFO':
+            rospy.loginfo(message)
+        elif level == 'WARN':
+            rospy.logwarn(message)
+        elif level == 'ERROR':
+            rospy.logerr(message)
+        
+        # Write to file with timestamp
+        timestamp = rospy.Time.now()
+        log_line = f"[{level}] [{timestamp.secs}.{timestamp.nsecs:09d}]: {message}\n"
+        self.log_file.write(log_line)
+        self.log_file.flush()  # Ensure immediate write
 
     def odom_callback(self, odom_msg):
         """
@@ -204,9 +249,9 @@ class PointCloudPlaneDetector:
             self.update_performance_metrics(processing_time)
 
         except Exception as e:
-            rospy.logerr(f"❌ Error detecting planes: {e}")
+            self.write_log(f"❌ Error detecting planes: {e}", level='ERROR')
             import traceback
-            rospy.logerr(traceback.format_exc())
+            self.write_log(traceback.format_exc(), level='ERROR')
 
     def pointcloud2_to_array(self, cloud_msg):
         """Convert PointCloud2 to numpy array."""
@@ -378,10 +423,11 @@ class PointCloudPlaneDetector:
                     # ========================================
                     if plane_info['type'] != old_plane['type']:
                         # Type changed! Suspicious!
-                        rospy.logwarn(
+                        self.write_log(
                             f"⚠️ Plane {plane_idx} type changed: "
                             f"{old_plane['type']} → {plane_info['type']} "
-                            f"(conf={old_plane['confidence']:.2f})"
+                            f"(conf={old_plane['confidence']:.2f})",
+                            level='WARN'
                         )
                         
                         # Only allow change if old confidence is LOW
@@ -389,22 +435,22 @@ class PointCloudPlaneDetector:
                             # LOCK THE LABEL! Don't change it
                             plane_info['type'] = old_plane['type']
                             plane_info['confidence'] = max(old_plane['confidence'] - 0.1, 0.4)
-                            rospy.loginfo(f"  🔒 Locked to: {old_plane['type']}")
+                            self.write_log(f"  🔒 Locked to: {old_plane['type']}")
                         else:
                             # Low confidence, allow change but reset confidence
                             plane_info['confidence'] = 0.5
-                            rospy.loginfo(f"  ✓ Accepted change (low conf)")
+                            self.write_log(f"  ✓ Accepted change (low conf)")
                     else:
                         # Type stayed same - increase confidence
                         plane_info['confidence'] = min(old_plane['confidence'] + 0.1, 1.0)
                     
-                    rospy.loginfo(
+                    self.write_log(
                         f"✓ Matched: {plane_info['type']} "
                         f"(conf: {plane_info['confidence']:.2f}, obs: {plane_info['observations']})"
                     )
                 else:
                     matched_key = f"plane_{plane_idx}_{self.frame_counter}"
-                    rospy.loginfo(f"✨ New: {plane_type}")
+                    self.write_log(f"✨ New: {plane_type}")
                 
                 self.plane_history[matched_key] = plane_info
                 
@@ -436,7 +482,7 @@ class PointCloudPlaneDetector:
 
                 marker_array.markers.append(marker)
 
-                rospy.loginfo(
+                self.write_log(
                     f"✓ Plane {plane_idx}: {plane_info['type']}, "
                     f"{len(best_inliers)} pts, z={centroid_z:.2f}m, "
                     f"area={plane_area:.2f}m², conf={plane_info['confidence']:.2f}"
@@ -455,7 +501,7 @@ class PointCloudPlaneDetector:
             if p['confidence'] > self.min_confidence_for_navigation
         )
         
-        rospy.loginfo(
+        self.write_log(
             f"✓ Detected {len(detected_planes)} planes "
             f"({reliable_count} reliable, history: {len(self.plane_history)})"
         )
@@ -535,7 +581,7 @@ class PointCloudPlaneDetector:
             if existing_floors:
                 lowest_floor_z = min(p['centroid'][2] for p in existing_floors)
                 if centroid_z > lowest_floor_z + 0.2:
-                    rospy.logwarn(f"  ⚠️ Multiple floors? Changed to Ceiling")
+                    self.write_log(f"  ⚠️ Multiple floors? Changed to Ceiling", level='WARN')
                     plane['type'] = 'Ceiling'
         
         # Rule 2: Only ONE ceiling (pick highest)
@@ -544,7 +590,7 @@ class PointCloudPlaneDetector:
             if existing_ceilings:
                 highest_ceiling_z = max(p['centroid'][2] for p in existing_ceilings)
                 if centroid_z < highest_ceiling_z - 0.2:
-                    rospy.logwarn(f"  ⚠️ Multiple ceilings? Changed to Wall")
+                    self.write_log(f"  ⚠️ Multiple ceilings? Changed to Wall", level='WARN')
                     plane['type'] = 'Wall'
         
         # Rule 3: Ceiling should be higher than floor
@@ -553,7 +599,7 @@ class PointCloudPlaneDetector:
             if floors:
                 max_floor_z = max(p['centroid'][2] for p in floors)
                 if centroid_z < max_floor_z + 1.5:
-                    rospy.logwarn(f"  ⚠️ Ceiling too low? Changed to Wall")
+                    self.write_log(f"  ⚠️ Ceiling too low? Changed to Wall", level='WARN')
                     plane['type'] = 'Wall'
         
         return plane
@@ -603,7 +649,7 @@ class PointCloudPlaneDetector:
             del self.plane_history[key]
         
         if keys_to_remove:
-            rospy.loginfo(f"🧹 Cleaned up {len(keys_to_remove)} old planes")
+            self.write_log(f"🧹 Cleaned up {len(keys_to_remove)} old planes")
 
     def get_reliable_planes_for_navigation(self):
         """
@@ -704,7 +750,7 @@ class PointCloudPlaneDetector:
 
     def clear_old_markers(self):
         """Clear old markers."""
-        rospy.loginfo("🧹 Clearing old markers...")
+        self.write_log("🧹 Clearing old markers...")
         
         # Clear planes
         clear_array = MarkerArray()
@@ -731,17 +777,29 @@ class PointCloudPlaneDetector:
         self.plane_labels_pub.publish(clear_labels)
         
         rospy.sleep(0.5)
-        rospy.loginfo("✓ Old markers cleared")
+        self.write_log("✓ Old markers cleared")
+
+    def cleanup(self):
+        """Cleanup function called on shutdown."""
+        self.write_log("")
+        self.write_log("=" * 70)
+        self.write_log(f"Session ended: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+        self.write_log(f"Total frames processed: {self.frame_counter}")
+        self.write_log(f"Total planes in history: {len(self.plane_history)}")
+        self.write_log("=" * 70)
+        self.log_file.close()
+        rospy.loginfo(f"✅ Log file saved: {self.log_filename}")
 
     def run(self):
         """Run the node."""
-        rospy.loginfo("✅ Robust Plane Detector running - ready for navigation!")
+        self.write_log("✅ Robust Plane Detector running - ready for navigation!")
         rospy.spin()
 
 
 if __name__ == '__main__':
     try:
         detector = PointCloudPlaneDetector()
+        rospy.on_shutdown(detector.cleanup)
         detector.run()
     except rospy.ROSInterruptException:
         rospy.loginfo("🛑 Plane Detector shut down")
